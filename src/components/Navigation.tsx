@@ -106,9 +106,9 @@ export function Navigation() {
             <Link 
               href="/" 
               className="flex items-center text-xl font-black text-neon transition-all duration-300 cursor-pointer hover:text-neon-cyan hover:scale-105"
-              aria-label="YourName - Home"
+              aria-label="Md Shahanshah home"
             >
-              YourName
+              Md Shahanshah
             </Link>
           </div>
 

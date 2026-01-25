@@ -45,23 +45,23 @@ export default function TechStackPage() {
   return (
     <>
       {/* Hero Section */}
-      <section aria-labelledby="tech-stack-heading" className="relative py-20 sm:py-32 overflow-hidden bg-cyber-grid">
+      <section aria-labelledby="tech-stack-heading" className="relative py-12 sm:py-16 overflow-hidden bg-cyber-grid">
         {/* Gradient orbs for visual interest - decorative */}
         <div className="gradient-orb w-96 h-96 -top-48 -right-48" aria-hidden="true" style={{ animationDelay: '0s' }}></div>
         <div className="gradient-orb w-80 h-80 -bottom-40 -left-40" aria-hidden="true" style={{ animationDelay: '4s' }}></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-          <h1 id="tech-stack-heading" className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 animate-fade-in-up">
+          <h1 id="tech-stack-heading" className="text-5xl sm:text-6xl lg:text-7xl font-black mb-4 animate-fade-in-up">
             <span className="text-neon">Tech Stack</span>
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-400 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-200">
+          <p className="text-xl sm:text-2xl text-gray-400 mb-6 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-200">
             Production-proven expertise in modern frontend development.
             <br className="hidden sm:block" />
             Ratings reflect <span className="text-white font-semibold">real-world experience</span>, not aspirational levels.
           </p>
 
           {/* Key stats */}
-          <div className="flex flex-wrap justify-center gap-6 animate-scale-in delay-300" role="list" aria-label="Experience statistics">
+          <div className="flex flex-wrap justify-center gap-4 animate-scale-in delay-300" role="list" aria-label="Experience statistics">
             <div className="card-clean min-w-[160px]" role="listitem">
               <div className="text-3xl font-black text-neon mb-1">6+</div>
               <div className="text-sm text-gray-400">Years Experience</div>
@@ -79,10 +79,10 @@ export default function TechStackPage() {
       </section>
 
       {/* Skills Grid - Main Content */}
-      <section aria-labelledby="core-skills-heading" className="py-20 sm:py-32 bg-dark-900">
+      <section aria-labelledby="core-skills-heading" className="py-12 sm:py-16 bg-dark-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <header className="mb-16 text-center">
-            <h2 id="core-skills-heading" className="text-4xl sm:text-5xl font-black text-white mb-4">
+          <header className="mb-10 text-center">
+            <h2 id="core-skills-heading" className="text-4xl sm:text-5xl font-black text-white mb-3">
               Core Skills
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
@@ -93,7 +93,7 @@ export default function TechStackPage() {
           </header>
 
           {/* Skill Categories Grid */}
-          <div className="space-y-16">
+          <div className="space-y-10">
             {skillCategories.map((category, categoryIndex) => (
               <article
                 key={category.title}
@@ -102,7 +102,7 @@ export default function TechStackPage() {
                 aria-labelledby={`category-${categoryIndex}`}
               >
                 {/* Category Header */}
-                <header className="mb-8">
+                <header className="mb-4">
                   <h3 id={`category-${categoryIndex}`} className="text-3xl font-bold text-white mb-2">
                     {category.title}
                   </h3>
@@ -110,7 +110,7 @@ export default function TechStackPage() {
                 </header>
 
                 {/* Skills Grid - Responsive */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" role="list">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4" role="list">
                   {category.skills.map((skill) => (
                     <div
                       key={skill.name}
@@ -133,7 +133,7 @@ export default function TechStackPage() {
       </section>
 
       {/* Rating Scale Legend */}
-      <section aria-labelledby="rating-scale-heading" className="py-20 bg-dark-800/50">
+      <section aria-labelledby="rating-scale-heading" className="py-12 bg-dark-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 id="rating-scale-heading" className="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">
             Rating Scale Explained
@@ -172,7 +172,7 @@ export default function TechStackPage() {
       </section>
 
       {/* Tools Section */}
-      <section aria-labelledby="tools-heading" className="py-20 sm:py-32 bg-dark-900">
+      <section aria-labelledby="tools-heading" className="py-12 sm:py-16 bg-dark-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <header className="mb-16 text-center">
             <h2 id="tools-heading" className="text-4xl sm:text-5xl font-black text-white mb-4">
@@ -213,7 +213,7 @@ export default function TechStackPage() {
       </section>
 
       {/* CTA Section */}
-      <section aria-labelledby="cta-heading" className="py-20 bg-dark-800/50">
+      <section aria-labelledby="cta-heading" className="py-12 bg-dark-800/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 id="cta-heading" className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Want to see these skills in action?

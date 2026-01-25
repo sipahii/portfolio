@@ -25,7 +25,7 @@ export default function FrontendSystemDesignPage() {
   return (
     <>
       {/* Hero Section */}
-      <section aria-labelledby="system-design-heading" className="relative py-20 sm:py-32 overflow-hidden bg-cyber-grid">
+      <section aria-labelledby="system-design-heading" className="relative py-10 sm:py-10 overflow-hidden bg-cyber-grid">
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1 id="system-design-heading" className="text-5xl sm:text-6xl font-bold mb-6 animate-fade-in-up">
             <span className="text-neon">Frontend System Design</span>
@@ -39,7 +39,7 @@ export default function FrontendSystemDesignPage() {
 
       {/* Main Content */}
       <div className="min-h-screen bg-dark-900">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="space-y-20">
             {systemDesigns.map((design, index) => (
               <article 

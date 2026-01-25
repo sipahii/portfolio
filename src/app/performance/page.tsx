@@ -100,7 +100,7 @@ export default function PerformancePage() {
 
   return (
     <div className="min-h-screen bg-dark-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-10">
         <div className="mb-16">
           <h1 className="text-6xl sm:text-7xl font-black mb-6 animate-fade-in-up">
             <span className="text-neon">Performance Dashboard</span>
