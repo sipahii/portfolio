@@ -1,0 +1,31 @@
+# Public Assets Directory
+
+This directory contains static assets that are served directly.
+
+## Required Files
+
+You should add the following files before deploying:
+
+### Favicon and Icons
+- `favicon.ico` - Browser favicon (32x32)
+- `icon-192.png` - PWA icon (192x192)
+- `icon-512.png` - PWA icon (512x512)
+
+### Open Graph Images
+- `og-image.png` - Open Graph image for social sharing (1200x630)
+
+### Other Assets
+- Add any images, fonts, or static files here
+
+## Generating Icons
+
+You can use tools like:
+- [Favicon Generator](https://favicon.io/)
+- [PWA Icon Generator](https://www.pwabuilder.com/)
+- [Real Favicon Generator](https://realfavicongenerator.net/)
+
+## Note on Performance
+
+- Keep file sizes small (use WebP/AVIF for images)
+- Use next/image for images that need optimization
+- Static files in this folder are served as-is
