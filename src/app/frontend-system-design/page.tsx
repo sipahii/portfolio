@@ -103,18 +103,20 @@ export default function FrontendSystemDesignPage() {
                   </div>
                 </section>
 
-                {/* Architecture Diagram - Collapsible */}
-                {design.diagram && (
-                  <section className="mb-6">
-                    <details className="terminal-box cursor-pointer group">
-                      <summary className="font-semibold text-neon-cyan cursor-pointer hover:text-neon-blue transition-colors list-none flex items-center gap-2">
-                        <span className="text-lg" aria-hidden="true">▶</span>
-                        <span>View Architecture Diagram</span>
-                      </summary>
-                      <pre className="text-xs font-mono text-gray-300 whitespace-pre mt-4 overflow-x-auto">
-                        {design.diagram}
-                      </pre>
-                    </details>
+                {/* Architecture Overview - Removed diagrams for performance */}
+                {design.architecture && (
+                  <section className="mb-6" aria-labelledby={`architecture-${index}`}>
+                    <h3 id={`architecture-${index}`} className="text-xl font-semibold text-white mb-3">
+                      Architecture Overview
+                    </h3>
+                    <ul className="space-y-2 terminal-box" role="list">
+                      {design.architecture.map((point, i) => (
+                        <li key={i} className="flex items-start text-sm text-gray-300" role="listitem">
+                          <span className="text-neon-cyan mr-2 flex-shrink-0">→</span>
+                          <span className="flex-1">{point}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </section>
                 )}
 
@@ -236,34 +238,13 @@ const systemDesigns = [
         'Support 10,000+ posts in session',
       ],
     },
-    diagram: `┌─────────────────────────────────────────────────────────┐
-│                     Client (Browser)                     │
-├─────────────────────────────────────────────────────────┤
-│  ┌─────────────────┐         ┌──────────────────────┐  │
-│  │  Virtual Scroll  │────────▶│   Viewport Window    │  │
-│  │   Container      │         │   (Visible Items)    │  │
-│  └─────────────────┘         └──────────────────────┘  │
-│           │                            │                 │
-│           ▼                            ▼                 │
-│  ┌─────────────────┐         ┌──────────────────────┐  │
-│  │ Intersection     │         │   Suspense           │  │
-│  │ Observer         │────────▶│   Boundaries         │  │
-│  └─────────────────┘         └──────────────────────┘  │
-│           │                            │                 │
-│           ▼                            ▼                 │
-│  ┌──────────────────────────────────────────────────┐  │
-│  │         React Server Components (RSC)             │  │
-│  └──────────────────────────────────────────────────┘  │
-└───────────┼────────────────────────────┼─────────────────┘
-            │                            │
-            ▼                            ▼
-┌─────────────────────────────────────────────────────────┐
-│                    API Layer (Edge)                      │
-│  ┌────────────┐  ┌──────────────┐  ┌───────────────┐  │
-│  │  GraphQL   │  │   REST API   │  │  WebSocket    │  │
-│  │  (Batch)   │  │   (Cursor)   │  │  (Real-time)  │  │
-│  └────────────┘  └──────────────┘  └───────────────┘  │
-└─────────────────────────────────────────────────────────┘`,
+    architecture: [
+      'Virtual scrolling container manages viewport window and renders only visible items',
+      'Intersection Observer triggers lazy loading as user scrolls near bottom',
+      'React Server Components fetch post data on the server side',
+      'Suspense boundaries handle loading states for async content',
+      'Edge API layer provides GraphQL for batching, REST API with cursor pagination, and WebSocket for real-time updates',
+    ],
     decisions: [
       {
         title: 'Virtual Scrolling with React Window',
@@ -321,38 +302,13 @@ const systemDesigns = [
         'Work offline (cached results)',
       ],
     },
-    diagram: `┌─────────────────────────────────────────────────────────┐
-│                     Client Layer                         │
-│  User Input ──▶ Debounce (300ms) ──▶ Client Cache       │
-│                        │                    │             │
-│                        │              Cache Hit?          │
-│                        │                    ├─Yes──▶ Show │
-│                        │                    └─No          │
-│                        ▼                         ▼        │
-│                 ┌──────────────────────────────────────┐ │
-│                 │    Search Request (Fetch API)        │ │
-│                 └──────────────────────────────────────┘ │
-└──────────────────────────────────┼────────────────────────┘
-                                   ▼
-┌─────────────────────────────────────────────────────────┐
-│                    Edge API Layer                        │
-│  ┌──────────────┐    ┌──────────────┐    ┌───────────┐ │
-│  │  Rate Limit  │───▶│  Validation  │───▶│  Query    │ │
-│  │  (Per User)  │    │  (Sanitize)  │    │  Parse    │ │
-│  └──────────────┘    └──────────────┘    └───────────┘ │
-└──────────────────────────────────┼────────────────────────┘
-                                   ▼
-┌─────────────────────────────────────────────────────────┐
-│                    Search Engine                         │
-│  ┌──────────────┐    ┌──────────────┐    ┌───────────┐ │
-│  │  Trie Index  │    │   Fuzzy      │    │  Ranking  │ │
-│  │  (Prefix)    │───▶│   Matching   │───▶│  (Score)  │ │
-│  └──────────────┘    └──────────────┘    └───────────┘ │
-│                                  │                        │
-│  ┌────────────────────────────────────────────────────┐ │
-│  │           Redis Cache (Hot Queries)                 │ │
-│  └────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────┘`,
+    architecture: [
+      'User input triggers debounce (300ms) to reduce server requests',
+      'Client-side cache checks for cached results before making API call',
+      'Edge API layer handles rate limiting, validation, and query parsing',
+      'Search engine uses Trie index for prefix matching and fuzzy matching for typos',
+      'Redis cache stores hot queries for instant results',
+    ],
     decisions: [
       {
         title: 'Debouncing with AbortController',
@@ -410,35 +366,13 @@ const systemDesigns = [
         'Support 100+ data points per second',
       ],
     },
-    diagram: `┌─────────────────────────────────────────────────────────┐
-│                     React Client                         │
-│  ┌───────────────────────────────────────────────────┐  │
-│  │         Dashboard Container (Server Component)    │  │
-│  └───────────────────────────────────────────────────┘  │
-│                         │                                │
-│                         ▼                                │
-│  ┌───────────────────────────────────────────────────┐  │
-│  │      Chart Components (Client Components)         │  │
-│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐       │  │
-│  │  │ LineChart│  │ BarChart │  │ PieChart │       │  │
-│  │  └──────────┘  └──────────┘  └──────────┘       │  │
-│  └───────────────────────────────────────────────────┘  │
-│                         │                                │
-│  ┌───────────────────────────────────────────────────┐  │
-│  │         WebSocket Connection Manager              │  │
-│  └───────────────────────────────────────────────────┘  │
-└─────────────────────────┼────────────────────────────────┘
-                          ▼
-┌─────────────────────────────────────────────────────────┐
-│                   WebSocket Server                       │
-│  ┌───────────────────────────────────────────────────┐  │
-│  │         Connection Pool Manager                   │  │
-│  └───────────────────────────────────────────────────┘  │
-│                         │                                │
-│  ┌───────────────────────────────────────────────────┐  │
-│  │         Message Aggregator                        │  │
-│  └───────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────┘`,
+    architecture: [
+      'Dashboard container uses React Server Components for initial data fetch',
+      'Individual chart components (LineChart, BarChart, PieChart) are client components',
+      'WebSocket Connection Manager maintains persistent connection for real-time data',
+      'WebSocket server handles connection pooling and message aggregation',
+      'Data flows from server through WebSocket to charts, triggering efficient canvas redraws',
+    ],
     decisions: [
       {
         title: 'Canvas-based Charts (not SVG)',
