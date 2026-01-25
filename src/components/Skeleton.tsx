@@ -1,10 +1,10 @@
 /**
- * Skeleton Loader Component
+ * Skeleton Loader Component - Enhanced with Shimmer
  * 
  * Purpose: Prevent CLS during loading states
  * 
  * Performance:
- * - CSS-only animation
+ * - CSS-only animation with shimmer effect
  * - Explicit dimensions
  * - No JavaScript required
  * 
@@ -24,12 +24,12 @@ export function Skeleton({
   height,
   variant = 'rectangular',
 }: SkeletonProps) {
-  const baseStyles = 'animate-pulse bg-gray-200 dark:bg-gray-700'
+  const baseStyles = 'shimmer bg-gradient-to-r from-neutral-200 via-neutral-300 to-neutral-200 dark:from-neutral-800 dark:via-neutral-700 dark:to-neutral-800'
 
   const variantStyles = {
     text: 'rounded h-4',
     circular: 'rounded-full',
-    rectangular: 'rounded',
+    rectangular: 'rounded-lg',
   }
 
   const style = {
@@ -52,13 +52,13 @@ export function Skeleton({
  */
 export function SkeletonCard() {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+    <div className="card-elevated">
       <Skeleton className="h-6 w-1/3 mb-4" />
       <Skeleton className="h-4 w-full mb-2" />
       <Skeleton className="h-4 w-2/3 mb-4" />
       <div className="flex gap-2">
-        <Skeleton className="h-8 w-20" />
-        <Skeleton className="h-8 w-20" />
+        <Skeleton className="h-10 w-24 rounded-lg" />
+        <Skeleton className="h-10 w-24 rounded-lg" />
       </div>
     </div>
   )
@@ -66,7 +66,7 @@ export function SkeletonCard() {
 
 export function SkeletonText({ lines = 3 }: { lines?: number }) {
   return (
-    <div className="space-y-2">
+    <div className="space-y-3">
       {Array.from({ length: lines }).map((_, i) => (
         <Skeleton
           key={i}

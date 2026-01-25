@@ -5,13 +5,13 @@
  * 
  * Architecture:
  * - Server Component
- * - Educational content with ASCII diagrams
- * - Interactive examples planned for future
+ * - Educational content with collapsible ASCII diagrams
+ * - Optimized for performance
  * 
  * Performance:
- * - Text-based content loads fast
- * - No external dependencies
- * - Minimal JavaScript
+ * - Diagrams hidden by default (on-demand)
+ * - No animation overload
+ * - Semantic HTML for accessibility
  */
 
 import type { Metadata } from 'next'
@@ -23,179 +23,193 @@ export const metadata: Metadata = {
 
 export default function FrontendSystemDesignPage() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-          Frontend System Design
-        </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400 mb-12">
-          Scalable frontend architectures, design patterns, and system design approaches
-          for building production-grade web applications.
-        </p>
-
-        <div className="space-y-16">
-          {systemDesigns.map((design) => (
-            <article key={design.title} className="border-t border-gray-200 dark:border-gray-700 pt-8 first:border-t-0 first:pt-0">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-4xl">{design.icon}</span>
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
-                  {design.title}
-                </h2>
-              </div>
-
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                {design.description}
-              </p>
-
-              {/* Problem Statement */}
-              <section className="mb-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                  Problem Statement
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  {design.problem}
-                </p>
-              </section>
-
-              {/* Requirements */}
-              <section className="mb-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                  Requirements
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <h4 className="font-medium text-green-600 dark:text-green-400 mb-2">
-                      Functional
-                    </h4>
-                    <ul className="space-y-1 text-sm text-gray-700 dark:text-gray-300">
-                      {design.requirements.functional.map((req, i) => (
-                        <li key={i} className="flex items-start">
-                          <span className="text-green-500 mr-2">•</span>
-                          <span>{req}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-blue-600 dark:text-blue-400 mb-2">
-                      Non-Functional
-                    </h4>
-                    <ul className="space-y-1 text-sm text-gray-700 dark:text-gray-300">
-                      {design.requirements.nonFunctional.map((req, i) => (
-                        <li key={i} className="flex items-start">
-                          <span className="text-blue-500 mr-2">•</span>
-                          <span>{req}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </section>
-
-              {/* Architecture Diagram */}
-              {design.diagram && (
-                <section className="mb-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                    Architecture
-                  </h3>
-                  <div className="bg-gray-50 dark:bg-gray-950 rounded-lg p-6 overflow-x-auto">
-                    <pre className="text-xs font-mono text-gray-800 dark:text-gray-200 whitespace-pre">
-                      {design.diagram}
-                    </pre>
-                  </div>
-                </section>
-              )}
-
-              {/* Key Decisions */}
-              <section className="mb-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                  Key Architectural Decisions
-                </h3>
-                <div className="space-y-4">
-                  {design.decisions.map((decision, i) => (
-                    <div key={i} className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800">
-                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
-                        {decision.title}
-                      </h4>
-                      <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
-                        {decision.rationale}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {decision.techniques.map((tech) => (
-                          <span
-                            key={tech}
-                            className="px-2 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 text-xs rounded"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Performance Optimizations */}
-              {design.optimizations && (
-                <section className="mb-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                    Performance Optimizations
-                  </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {design.optimizations.map((opt, i) => (
-                      <div key={i} className="bg-green-50 dark:bg-green-900/20 rounded-lg p-3 border border-green-200 dark:border-green-800">
-                        <p className="text-sm text-gray-700 dark:text-gray-300">
-                          <span className="font-semibold text-green-600 dark:text-green-400">
-                            {opt.technique}:
-                          </span>{' '}
-                          {opt.benefit}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              )}
-
-              {/* Trade-offs */}
-              {design.tradeoffs && (
-                <section className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-6 border border-yellow-200 dark:border-yellow-800">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                    Trade-offs & Considerations
-                  </h3>
-                  <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
-                    {design.tradeoffs.map((tradeoff, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-yellow-500 mr-2">⚠</span>
-                        <span>{tradeoff}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              )}
-            </article>
-          ))}
+    <>
+      {/* Hero Section */}
+      <section aria-labelledby="system-design-heading" className="relative py-20 sm:py-32 overflow-hidden bg-cyber-grid">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+          <h1 id="system-design-heading" className="text-5xl sm:text-6xl font-bold mb-6 animate-fade-in-up">
+            <span className="text-neon">Frontend System Design</span>
+          </h1>
+          <p className="text-xl text-gray-400 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-200">
+            Scalable frontend architectures, design patterns, and system design approaches
+            for building production-grade web applications.
+          </p>
         </div>
+      </section>
 
-        {/* Design Principles */}
-        <section className="mt-16 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg p-8 border border-blue-200 dark:border-blue-800">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            Frontend System Design Principles
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {designPrinciples.map((principle) => (
-              <div key={principle.title} className="bg-white dark:bg-gray-800 rounded-lg p-4">
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                  {principle.title}
-                </h3>
-                <p className="text-sm text-gray-700 dark:text-gray-300">
-                  {principle.description}
+      {/* Main Content */}
+      <div className="min-h-screen bg-dark-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="space-y-20">
+            {systemDesigns.map((design, index) => (
+              <article 
+                key={design.title} 
+                className="card-clean card-hover"
+                aria-labelledby={`design-${index}`}
+              >
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="text-5xl" aria-hidden="true">{design.icon}</span>
+                  <h2 id={`design-${index}`} className="text-4xl font-bold text-white">
+                    {design.title}
+                  </h2>
+                </div>
+
+                <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                  {design.description}
                 </p>
-              </div>
+
+                {/* Problem Statement */}
+                <section className="mb-8" aria-labelledby={`problem-${index}`}>
+                  <h3 id={`problem-${index}`} className="text-2xl font-semibold text-white mb-4">
+                    Problem Statement
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    {design.problem}
+                  </p>
+                </section>
+
+                {/* Requirements */}
+                <section className="mb-8" aria-labelledby={`requirements-${index}`}>
+                  <h3 id={`requirements-${index}`} className="text-2xl font-semibold text-white mb-4">
+                    Requirements
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="terminal-box">
+                      <h4 className="font-semibold text-neon-cyan mb-3 text-lg">
+                        Functional
+                      </h4>
+                      <ul className="space-y-2" role="list">
+                        {design.requirements.functional.map((req, i) => (
+                          <li key={i} className="flex items-start text-sm text-gray-300" role="listitem">
+                            <span className="text-neon-cyan mr-2 mt-1" aria-hidden="true">•</span>
+                            <span className="flex-1">{req}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="terminal-box border-neon-purple/30">
+                      <h4 className="font-semibold text-neon-purple mb-3 text-lg">
+                        Non-Functional
+                      </h4>
+                      <ul className="space-y-2" role="list">
+                        {design.requirements.nonFunctional.map((req, i) => (
+                          <li key={i} className="flex items-start text-sm text-gray-300" role="listitem">
+                            <span className="text-neon-purple mr-2 mt-1" aria-hidden="true">•</span>
+                            <span className="flex-1">{req}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+
+                {/* Architecture Diagram - Collapsible */}
+                {design.diagram && (
+                  <section className="mb-6">
+                    <details className="terminal-box cursor-pointer group">
+                      <summary className="font-semibold text-neon-cyan cursor-pointer hover:text-neon-blue transition-colors list-none flex items-center gap-2">
+                        <span className="text-lg" aria-hidden="true">▶</span>
+                        <span>View Architecture Diagram</span>
+                      </summary>
+                      <pre className="text-xs font-mono text-gray-300 whitespace-pre mt-4 overflow-x-auto">
+                        {design.diagram}
+                      </pre>
+                    </details>
+                  </section>
+                )}
+
+                {/* Key Decisions */}
+                <section className="mb-6" aria-labelledby={`decisions-${index}`}>
+                  <h3 id={`decisions-${index}`} className="text-xl font-semibold text-white mb-3">
+                    Key Architectural Decisions
+                  </h3>
+                  <div className="space-y-4" role="list">
+                    {design.decisions.map((decision, i) => (
+                      <div key={i} className="glass-dark rounded-lg p-4 border border-neon-blue/30" role="listitem">
+                        <h4 className="font-semibold text-white mb-2">
+                          {decision.title}
+                        </h4>
+                        <p className="text-sm text-gray-300 mb-2">
+                          {decision.rationale}
+                        </p>
+                        <div className="flex flex-wrap gap-2" role="list" aria-label="Technologies">
+                          {decision.techniques.map((tech) => (
+                            <span
+                              key={tech}
+                              className="badge-neon text-xs"
+                              role="listitem"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                {/* Performance Optimizations */}
+                {design.optimizations && (
+                  <section className="mb-6" aria-labelledby={`optimizations-${index}`}>
+                    <h3 id={`optimizations-${index}`} className="text-xl font-semibold text-white mb-3">
+                      Performance Optimizations
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3" role="list">
+                      {design.optimizations.map((opt, i) => (
+                        <div key={i} className="terminal-box border-neon-cyan/30" role="listitem">
+                          <p className="text-sm text-gray-300">
+                            <span className="font-semibold text-neon-cyan">
+                              {opt.technique}:
+                            </span>{' '}
+                            {opt.benefit}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                )}
+
+                {/* Trade-offs */}
+                {design.tradeoffs && (
+                  <section className="glass-dark rounded-lg p-6 border border-yellow-500/30" aria-labelledby={`tradeoffs-${index}`}>
+                    <h3 id={`tradeoffs-${index}`} className="text-xl font-semibold text-white mb-3">
+                      Trade-offs & Considerations
+                    </h3>
+                    <ul className="space-y-2 text-sm text-gray-300" role="list">
+                      {design.tradeoffs.map((tradeoff, i) => (
+                        <li key={i} className="flex items-start" role="listitem">
+                          <span className="text-yellow-400 mr-2" aria-hidden="true">⚠</span>
+                          <span>{tradeoff}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                )}
+              </article>
             ))}
           </div>
-        </section>
+
+          {/* Design Principles */}
+          <section className="mt-16 card-clean" aria-labelledby="design-principles-heading">
+            <h2 id="design-principles-heading" className="text-2xl font-bold text-white mb-6">
+              Frontend System Design Principles
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6" role="list">
+              {designPrinciples.map((principle) => (
+                <article key={principle.title} className="glass-dark rounded-lg p-4 border border-neon-purple/20" role="listitem">
+                  <h3 className="font-semibold text-white mb-2">
+                    {principle.title}
+                  </h3>
+                  <p className="text-sm text-gray-300">
+                    {principle.description}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
@@ -222,16 +236,13 @@ const systemDesigns = [
         'Support 10,000+ posts in session',
       ],
     },
-    diagram: `
-┌─────────────────────────────────────────────────────────┐
+    diagram: `┌─────────────────────────────────────────────────────────┐
 │                     Client (Browser)                     │
 ├─────────────────────────────────────────────────────────┤
-│                                                           │
 │  ┌─────────────────┐         ┌──────────────────────┐  │
 │  │  Virtual Scroll  │────────▶│   Viewport Window    │  │
 │  │   Container      │         │   (Visible Items)    │  │
 │  └─────────────────┘         └──────────────────────┘  │
-│           │                            │                 │
 │           │                            │                 │
 │           ▼                            ▼                 │
 │  ┌─────────────────┐         ┌──────────────────────┐  │
@@ -239,14 +250,10 @@ const systemDesigns = [
 │  │ Observer         │────────▶│   Boundaries         │  │
 │  └─────────────────┘         └──────────────────────┘  │
 │           │                            │                 │
-│           │                            │                 │
 │           ▼                            ▼                 │
 │  ┌──────────────────────────────────────────────────┐  │
 │  │         React Server Components (RSC)             │  │
-│  │  - Fetch posts from API in batches                │  │
-│  │  - Stream HTML to client                          │  │
 │  └──────────────────────────────────────────────────┘  │
-│           │                            │                 │
 └───────────┼────────────────────────────┼─────────────────┘
             │                            │
             ▼                            ▼
@@ -255,15 +262,6 @@ const systemDesigns = [
 │  ┌────────────┐  ┌──────────────┐  ┌───────────────┐  │
 │  │  GraphQL   │  │   REST API   │  │  WebSocket    │  │
 │  │  (Batch)   │  │   (Cursor)   │  │  (Real-time)  │  │
-│  └────────────┘  └──────────────┘  └───────────────┘  │
-└─────────────────────────────────────────────────────────┘
-            │                            │
-            ▼                            ▼
-┌─────────────────────────────────────────────────────────┐
-│                    Data Layer                            │
-│  ┌────────────┐  ┌──────────────┐  ┌───────────────┐  │
-│  │  Database  │  │   CDN Cache  │  │   Redis       │  │
-│  │  (Posts)   │  │   (Images)   │  │   (Session)   │  │
 │  └────────────┘  └──────────────┘  └───────────────┘  │
 └─────────────────────────────────────────────────────────┘`,
     decisions: [
@@ -323,52 +321,36 @@ const systemDesigns = [
         'Work offline (cached results)',
       ],
     },
-    diagram: `
-┌─────────────────────────────────────────────────────────┐
+    diagram: `┌─────────────────────────────────────────────────────────┐
 │                     Client Layer                         │
-├─────────────────────────────────────────────────────────┤
-│                                                           │
 │  User Input ──▶ Debounce (300ms) ──▶ Client Cache       │
 │                        │                    │             │
-│                        │                    │             │
 │                        │              Cache Hit?          │
-│                        │                    │             │
 │                        │                    ├─Yes──▶ Show │
-│                        │                    │             │
 │                        │                    └─No          │
-│                        │                         │        │
 │                        ▼                         ▼        │
 │                 ┌──────────────────────────────────────┐ │
 │                 │    Search Request (Fetch API)        │ │
 │                 └──────────────────────────────────────┘ │
-│                                  │                        │
 └──────────────────────────────────┼────────────────────────┘
-                                   │
                                    ▼
 ┌─────────────────────────────────────────────────────────┐
 │                    Edge API Layer                        │
-│                                                           │
 │  ┌──────────────┐    ┌──────────────┐    ┌───────────┐ │
 │  │  Rate Limit  │───▶│  Validation  │───▶│  Query    │ │
 │  │  (Per User)  │    │  (Sanitize)  │    │  Parse    │ │
 │  └──────────────┘    └──────────────┘    └───────────┘ │
-│                                  │                        │
 └──────────────────────────────────┼────────────────────────┘
-                                   │
                                    ▼
 ┌─────────────────────────────────────────────────────────┐
 │                    Search Engine                         │
-│                                                           │
 │  ┌──────────────┐    ┌──────────────┐    ┌───────────┐ │
 │  │  Trie Index  │    │   Fuzzy      │    │  Ranking  │ │
 │  │  (Prefix)    │───▶│   Matching   │───▶│  (Score)  │ │
 │  └──────────────┘    └──────────────┘    └───────────┘ │
 │                                  │                        │
-│                                  ▼                        │
 │  ┌────────────────────────────────────────────────────┐ │
 │  │           Redis Cache (Hot Queries)                 │ │
-│  │  - Top 1000 queries cached                          │ │
-│  │  - TTL: 5 minutes                                   │ │
 │  └────────────────────────────────────────────────────┘ │
 └─────────────────────────────────────────────────────────┘`,
     decisions: [
@@ -428,15 +410,10 @@ const systemDesigns = [
         'Support 100+ data points per second',
       ],
     },
-    diagram: `
-┌─────────────────────────────────────────────────────────┐
+    diagram: `┌─────────────────────────────────────────────────────────┐
 │                     React Client                         │
-├─────────────────────────────────────────────────────────┤
-│                                                           │
 │  ┌───────────────────────────────────────────────────┐  │
 │  │         Dashboard Container (Server Component)    │  │
-│  │  - Layout definition                              │  │
-│  │  - Initial data fetch                             │  │
 │  └───────────────────────────────────────────────────┘  │
 │                         │                                │
 │                         ▼                                │
@@ -444,46 +421,23 @@ const systemDesigns = [
 │  │      Chart Components (Client Components)         │  │
 │  │  ┌──────────┐  ┌──────────┐  ┌──────────┐       │  │
 │  │  │ LineChart│  │ BarChart │  │ PieChart │       │  │
-│  │  │ (Canvas) │  │ (Canvas) │  │ (SVG)    │       │  │
 │  │  └──────────┘  └──────────┘  └──────────┘       │  │
 │  └───────────────────────────────────────────────────┘  │
 │                         │                                │
-│                         ▼                                │
 │  ┌───────────────────────────────────────────────────┐  │
 │  │         WebSocket Connection Manager              │  │
-│  │  - Reconnection logic                             │  │
-│  │  - Message queue                                  │  │
-│  │  - Backpressure handling                          │  │
 │  └───────────────────────────────────────────────────┘  │
-│                         │                                │
 └─────────────────────────┼────────────────────────────────┘
-                          │
                           ▼
 ┌─────────────────────────────────────────────────────────┐
 │                   WebSocket Server                       │
-│                                                           │
 │  ┌───────────────────────────────────────────────────┐  │
 │  │         Connection Pool Manager                   │  │
-│  │  - Manage 10k+ concurrent connections             │  │
-│  │  - Broadcast to subscribed clients                │  │
 │  └───────────────────────────────────────────────────┘  │
 │                         │                                │
-│                         ▼                                │
 │  ┌───────────────────────────────────────────────────┐  │
 │  │         Message Aggregator                        │  │
-│  │  - Batch updates every 1s                         │  │
-│  │  - Downsample high-frequency data                 │  │
 │  └───────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────┘
-                          │
-                          ▼
-┌─────────────────────────────────────────────────────────┐
-│                   Data Pipeline                          │
-│                                                           │
-│  ┌──────────┐    ┌──────────┐    ┌──────────────────┐  │
-│  │ Metrics  │───▶│  Redis   │───▶│  Time-Series DB  │  │
-│  │ Collector│    │  Stream  │    │  (InfluxDB)      │  │
-│  └──────────┘    └──────────┘    └──────────────────┘  │
 └─────────────────────────────────────────────────────────┘`,
     decisions: [
       {

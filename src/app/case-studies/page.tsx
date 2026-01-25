@@ -24,45 +24,46 @@ export const metadata: Metadata = {
 
 export default function CaseStudiesPage() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-          Case Studies
+    <div className="min-h-screen bg-dark-900">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <h1 className="text-5xl sm:text-6xl font-bold mb-6 animate-fade-in-up">
+          <span className="text-neon">Case Studies</span>
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400 mb-12">
+        <p className="text-xl text-gray-400 mb-16 animate-fade-in-up animate-delay-100">
           Real-world frontend challenges and the solutions that worked in production.
           Each case study includes the problem, approach, implementation, and measured results.
         </p>
 
-        <div className="space-y-12">
+        <div className="space-y-16">
           {caseStudies.map((study, index) => (
             <article
               key={study.title}
-              className="border-l-4 border-blue-500 pl-6 py-2"
+              className="card-clean card-hover animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-center gap-4 mb-4">
-                <span className="text-3xl">{study.icon}</span>
+              <div className="flex items-center gap-4 mb-6">
+                <span className="text-5xl">{study.icon}</span>
                 <div>
-                  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
+                  <h2 className="text-3xl font-semibold text-white">
                     {study.title}
                   </h2>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p className="text-sm text-gray-400 mt-1">
                     {study.company} • {study.year}
                   </p>
                 </div>
               </div>
 
               {/* Challenge */}
-              <section className="mb-4">
-                <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">
+              <section className="mb-6">
+                <h3 className="text-xl font-semibold text-neon-pink mb-3">
                   🚨 Challenge
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-2">
+                <p className="text-gray-300 mb-3 leading-relaxed">
                   {study.challenge}
                 </p>
                 {study.metrics && (
-                  <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-3">
-                    <p className="text-sm font-mono text-gray-700 dark:text-gray-300">
+                  <div className="glass-dark rounded-lg p-6 card-hover">
+                    <p className="text-sm font-mono text-gray-300">
                       {study.metrics}
                     </p>
                   </div>
@@ -70,22 +71,22 @@ export default function CaseStudiesPage() {
               </section>
 
               {/* Solution */}
-              <section className="mb-4">
-                <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-2">
+              <section className="mb-6">
+                <h3 className="text-xl font-semibold text-neon-cyan mb-3">
                   💡 Solution
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-300 mb-4 leading-relaxed">
                   {study.solution}
                 </p>
-                <div className="space-y-2">
-                  <h4 className="font-medium text-gray-900 dark:text-white">
+                <div className="space-y-3">
+                  <h4 className="font-medium text-white">
                     Key Techniques:
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {study.techniques.map((technique) => (
                       <span
                         key={technique}
-                        className="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 text-sm rounded-full"
+                        className="badge-neon"
                       >
                         {technique}
                       </span>
@@ -96,15 +97,15 @@ export default function CaseStudiesPage() {
 
               {/* Implementation */}
               {study.implementation && (
-                <section className="mb-4">
-                  <h3 className="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-2">
+                <section className="mb-6">
+                  <h3 className="text-xl font-semibold text-white mb-3">
                     🔧 Implementation Highlights
                   </h3>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <ul className="space-y-3">
                     {study.implementation.map((item, i) => (
                       <li key={i} className="flex items-start">
-                        <span className="text-purple-500 mr-2">•</span>
-                        <span>{item}</span>
+                        <span className="text-neon-purple mr-3 mt-1">•</span>
+                        <span className="flex-1 text-gray-300">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -112,15 +113,15 @@ export default function CaseStudiesPage() {
               )}
 
               {/* Results */}
-              <section className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
-                <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">
+              <section className="terminal-box border-neon-cyan/30">
+                <h3 className="text-xl font-semibold text-neon-cyan mb-4">
                   📊 Results
                 </h3>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                <ul className="space-y-3">
                   {study.results.map((result, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-green-500 mr-2">✓</span>
-                      <span>{result}</span>
+                      <span className="text-neon-cyan mr-3 mt-1 text-lg">✓</span>
+                      <span className="flex-1 text-gray-300">{result}</span>
                     </li>
                   ))}
                 </ul>
@@ -128,11 +129,11 @@ export default function CaseStudiesPage() {
 
               {/* Lessons Learned */}
               {study.lessons && (
-                <section className="mt-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4">
-                  <h3 className="text-lg font-semibold text-yellow-700 dark:text-yellow-400 mb-2">
+                <section className="mt-6 glass-dark rounded-lg p-6 card-hover">
+                  <h3 className="text-xl font-semibold text-white mb-3">
                     💭 Lessons Learned
                   </h3>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-gray-300 leading-relaxed">
                     {study.lessons}
                   </p>
                 </section>
@@ -142,16 +143,16 @@ export default function CaseStudiesPage() {
         </div>
 
         {/* CTA Section */}
-        <section className="mt-16 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-8 border border-blue-200 dark:border-blue-800 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Interested in discussing frontend challenges?
+        <section className="mt-20 card-clean card-hover text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            <span className="text-neon">Interested in discussing frontend challenges?</span>
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">
+          <p className="text-gray-400 mb-8 text-lg">
             I love solving complex performance problems and building scalable architectures.
           </p>
           <Link
             href="/frontend-system-design"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+            className="btn-neon inline-block"
           >
             View System Design Examples →
           </Link>

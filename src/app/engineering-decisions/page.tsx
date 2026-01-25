@@ -23,63 +23,70 @@ export const metadata: Metadata = {
 
 export default function EngineeringDecisionsPage() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-          Engineering Decisions
+    <div className="min-h-screen bg-dark-900">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <h1 className="text-6xl sm:text-7xl font-black mb-6 animate-fade-in-up">
+          <span className="text-neon">Engineering Decisions</span>
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400 mb-12">
+        <p className="text-xl text-gray-400 mb-16 animate-fade-in-up delay-100">
           Every technical decision is a tradeoff. Here's the reasoning behind the architectural
           choices in this portfolio, optimized for Core Web Vitals and developer experience.
         </p>
 
         <div className="space-y-12">
-          {decisions.map((decision) => (
+          {decisions.map((decision, index) => (
             <article
               key={decision.title}
-              className="border-l-4 border-blue-500 pl-6 py-2"
+              className="card-clean card-hover animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3">
+              <h2 className="text-3xl font-bold text-white mb-4">
                 {decision.title}
               </h2>
               
-              <div className="space-y-4 text-gray-700 dark:text-gray-300">
+              <div className="space-y-6 text-gray-300">
                 <div>
-                  <h3 className="font-semibold text-green-600 dark:text-green-400 mb-2">
+                  <h3 className="font-bold text-neon-cyan mb-2 text-lg">
                     ✓ Decision
                   </h3>
-                  <p>{decision.decision}</p>
+                  <p className="leading-relaxed">{decision.decision}</p>
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-blue-600 dark:text-blue-400 mb-2">
+                  <h3 className="font-bold text-neon-purple mb-2 text-lg">
                     📋 Reasoning
                   </h3>
-                  <p>{decision.reasoning}</p>
+                  <p className="leading-relaxed">{decision.reasoning}</p>
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-purple-600 dark:text-purple-400 mb-2">
+                  <h3 className="font-bold text-white mb-3 text-lg">
                     ⚖️ Tradeoffs
                   </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <h4 className="font-medium text-green-700 dark:text-green-300 mb-1">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="terminal-box">
+                      <h4 className="font-bold text-neon-cyan mb-2">
                         Pros:
                       </h4>
-                      <ul className="list-disc list-inside space-y-1">
+                      <ul className="space-y-2">
                         {decision.tradeoffs.pros.map((pro, i) => (
-                          <li key={i}>{pro}</li>
+                          <li key={i} className="flex items-start">
+                            <span className="text-neon-cyan mr-2 mt-1">+</span>
+                            <span className="flex-1">{pro}</span>
+                          </li>
                         ))}
                       </ul>
                     </div>
-                    <div>
-                      <h4 className="font-medium text-red-700 dark:text-red-300 mb-1">
+                    <div className="terminal-box border-neon-pink/30">
+                      <h4 className="font-bold text-neon-pink mb-2">
                         Cons:
                       </h4>
-                      <ul className="list-disc list-inside space-y-1">
+                      <ul className="space-y-2">
                         {decision.tradeoffs.cons.map((con, i) => (
-                          <li key={i}>{con}</li>
+                          <li key={i} className="flex items-start">
+                            <span className="text-neon-pink mr-2 mt-1">-</span>
+                            <span className="flex-1">{con}</span>
+                          </li>
                         ))}
                       </ul>
                     </div>
@@ -87,11 +94,11 @@ export default function EngineeringDecisionsPage() {
                 </div>
 
                 {decision.impact && (
-                  <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                  <div className="glass-dark rounded-lg p-4 border border-neon-blue/30">
+                    <h3 className="font-bold text-neon-blue mb-2 text-lg">
                       📊 Performance Impact
                     </h3>
-                    <p className="text-sm">{decision.impact}</p>
+                    <p className="text-sm leading-relaxed">{decision.impact}</p>
                   </div>
                 )}
               </div>
@@ -100,30 +107,30 @@ export default function EngineeringDecisionsPage() {
         </div>
 
         {/* Key Principles Section */}
-        <section className="mt-16 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-8 border border-blue-200 dark:border-blue-800">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Core Principles
+        <section className="mt-20 card-neon">
+          <h2 className="text-3xl font-bold text-white mb-6">
+            <span className="text-neon">Core Principles</span>
           </h2>
-          <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+          <ul className="space-y-4">
             <li className="flex items-start">
-              <span className="text-blue-600 dark:text-blue-400 mr-2">▸</span>
-              <span><strong>Performance First:</strong> Every decision is evaluated against Core Web Vitals impact</span>
+              <span className="text-neon-purple mr-3 text-xl">▸</span>
+              <span className="flex-1 text-gray-300"><strong className="text-white">Performance First:</strong> Every decision is evaluated against Core Web Vitals impact</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-600 dark:text-blue-400 mr-2">▸</span>
-              <span><strong>Server by Default:</strong> Use Server Components unless client interactivity is required</span>
+              <span className="text-neon-purple mr-3 text-xl">▸</span>
+              <span className="flex-1 text-gray-300"><strong className="text-white">Server by Default:</strong> Use Server Components unless client interactivity is required</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-600 dark:text-blue-400 mr-2">▸</span>
-              <span><strong>Progressive Enhancement:</strong> Core functionality works without JavaScript</span>
+              <span className="text-neon-purple mr-3 text-xl">▸</span>
+              <span className="flex-1 text-gray-300"><strong className="text-white">Progressive Enhancement:</strong> Core functionality works without JavaScript</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-600 dark:text-blue-400 mr-2">▸</span>
-              <span><strong>Measure Everything:</strong> Use Web Vitals API to track real user metrics</span>
+              <span className="text-neon-purple mr-3 text-xl">▸</span>
+              <span className="flex-1 text-gray-300"><strong className="text-white">Measure Everything:</strong> Use Web Vitals API to track real user metrics</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-600 dark:text-blue-400 mr-2">▸</span>
-              <span><strong>Zero CLS:</strong> Stable layouts with explicit dimensions for all elements</span>
+              <span className="text-neon-purple mr-3 text-xl">▸</span>
+              <span className="flex-1 text-gray-300"><strong className="text-white">Zero CLS:</strong> Stable layouts with explicit dimensions for all elements</span>
             </li>
           </ul>
         </section>

@@ -1,27 +1,17 @@
 /**
- * Home Page
+ * Home Page - Linear-Style Dark Theme
  * 
  * Architecture:
- * - Server Component (default, no 'use client')
- * - Static rendering for optimal performance
- * - Minimal JavaScript sent to client
+ * - Server Component (no client JS)
+ * - Dark-first futuristic design
+ * - Neon accents and glows
+ * - 3D card effects
+ * - Animated grid background
  * 
- * LCP Optimization:
- * - Hero content rendered on server (no client-side fetch)
- * - Critical content above the fold
- * - Text content loads immediately
- * - Optimized with next/font
- * 
- * CLS Prevention:
- * - All layout dimensions are stable
- * - No dynamic content that causes reflow
- * - Skeleton loaders where needed
- * - Grid layout prevents shifts
- * 
- * Performance Budget:
- * - Minimal dependencies
- * - No heavy libraries
- * - CSS-only animations
+ * Performance:
+ * - CSS-only animations (GPU accelerated)
+ * - No layout shifts
+ * - Optimized for Core Web Vitals
  */
 
 import type { Metadata } from 'next'
@@ -34,113 +24,136 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="min-h-[calc(100vh-4rem)]">
-      {/* Hero Section - LCP optimized */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32">
-        <div className="text-center">
-          {/* Text content loads immediately - no image to slow LCP */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 animate-fade-in">
-            Senior Staff Frontend Engineer
+    <>
+      {/* Hero Section - Futuristic with grid background */}
+      <section aria-labelledby="hero-heading" className="relative min-h-[20vh] flex items-center justify-center overflow-hidden bg-cyber-grid">
+        {/* Animated gradient orbs - decorative */}
+        
+        {/* Scanline effect overlay - decorative */}
+        
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center z-10">
+          {/* Neon headline */}
+          <h1 id="hero-heading" className="text-6xl sm:text-7xl lg:text-8xl font-black mb-8 animate-fade-in-up">
+            <span className="text-neon">
+              Senior Staff
+            </span>
+            <br />
+            <span className="text-white">
+              Frontend Engineer
+            </span>
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto animate-slide-up">
-            Building production-grade applications with Next.js, React, and TypeScript.
+          
+          <p className="text-xl sm:text-2xl lg:text-3xl text-gray-400 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-200">
+            Building production-grade applications with{' '}
+            <span className="text-neon-blue font-semibold">Next.js</span>,{' '}
+            <span className="text-neon-purple font-semibold">React</span>, and{' '}
+            <span className="text-neon-cyan font-semibold">TypeScript</span>.
+            <br className="hidden sm:block" />
             Obsessed with Core Web Vitals and frontend performance.
           </p>
           
-          {/* Key metrics showcase */}
-          <div className="flex flex-wrap justify-center gap-6 mb-12 animate-slide-up">
-            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg px-6 py-4">
-              <div className="text-2xl font-bold text-green-600 dark:text-green-400">LCP &lt; 2.5s</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Largest Contentful Paint</div>
+          {/* Metrics Cards - Decorative statistics */}
+          <div className="flex flex-wrap justify-center gap-6 mb-12 animate-scale-in delay-300" role="list" aria-label="Core Web Vitals targets">
+            <div className="card-clean min-w-[200px]" role="listitem">
+              <div className="text-4xl font-black text-neon mb-2" aria-label="Largest Contentful Paint: less than 2.5 seconds">LCP &lt; 2.5s</div>
+              <div className="text-sm text-gray-400">Largest Contentful Paint</div>
             </div>
-            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg px-6 py-4">
-              <div className="text-2xl font-bold text-green-600 dark:text-green-400">CLS &lt; 0.1</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Cumulative Layout Shift</div>
+            <div className="card-clean min-w-[200px] delay-100" role="listitem">
+              <div className="text-4xl font-black text-neon mb-2" aria-label="Cumulative Layout Shift: less than 0.1">CLS &lt; 0.1</div>
+              <div className="text-sm text-gray-400">Cumulative Layout Shift</div>
             </div>
-            <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg px-6 py-4">
-              <div className="text-2xl font-bold text-green-600 dark:text-green-400">INP &lt; 200ms</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Interaction to Next Paint</div>
+            <div className="card-clean min-w-[200px] delay-200" role="listitem">
+              <div className="text-4xl font-black text-neon mb-2" aria-label="Interaction to Next Paint: less than 200 milliseconds">INP &lt; 200ms</div>
+              <div className="text-sm text-gray-400">Interaction to Next Paint</div>
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4">
+          {/* Navigation CTAs */}
+          <nav aria-label="Primary actions" className="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-400">
             <Link
               href="/engineering-decisions"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              className="btn-neon"
             >
               View Engineering Decisions
             </Link>
             <Link
               href="/performance"
-              className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-700 text-base font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              className="btn-neon-outline"
             >
               Performance Dashboard
             </Link>
-          </div>
+          </nav>
         </div>
       </section>
 
-      {/* Expertise Section */}
-      <section className="bg-gray-50 dark:bg-gray-900 py-16 sm:py-20">
+      {/* Expertise Section - 3D Cards */}
+      <section aria-labelledby="expertise-heading" className="py-32 relative bg-dark-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Areas of Expertise
+          <h2 id="expertise-heading" className="text-5xl sm:text-6xl font-black text-center mb-6">
+            <span className="text-neon">Areas of Expertise</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <p className="text-center text-gray-400 mb-20 text-xl max-w-3xl mx-auto">
+            Specialized in performance optimization, modern React patterns, and scalable frontend architecture
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
             {expertise.map((item, index) => (
-              <div
+              <article
                 key={item.title}
-                className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
+                className="card-neon animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
+                role="listitem"
               >
-                <div className="text-3xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                <div className="text-5xl mb-6" aria-hidden="true">{item.icon}</div>
+                <h3 className="text-2xl font-bold text-white mb-4">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-400 leading-relaxed">
                   {item.description}
                 </p>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Featured Pages */}
-      <section className="py-16 sm:py-20">
+      {/* Featured Pages - Holographic Cards */}
+      <section aria-labelledby="featured-heading" className="py-32 relative bg-dark-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Explore My Work
+          <h2 id="featured-heading" className="text-5xl sm:text-6xl font-black text-center mb-6">
+            <span className="text-neon">Explore My Work</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {featuredPages.map((page) => (
+          <p className="text-center text-gray-400 mb-20 text-xl max-w-3xl mx-auto">
+            Deep dives into performance optimization, system design, and real-world case studies
+          </p>
+          
+          <nav aria-label="Featured portfolio pages" className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {featuredPages.map((page, index) => (
               <Link
                 key={page.href}
                 href={page.href}
-                className="group bg-white dark:bg-gray-800 rounded-lg p-8 border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-all hover:shadow-lg"
+                className="card-holographic card-hover cursor-pointer animate-scale-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+                aria-label={`${page.title}: ${page.description}`}
               >
-                <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  {page.title} →
+                <h3 className="text-3xl font-bold text-white mb-4">
+                  {page.title} <span aria-hidden="true">→</span>
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-400 leading-relaxed text-lg">
                   {page.description}
                 </p>
               </Link>
             ))}
-          </div>
+          </nav>
         </div>
       </section>
-    </div>
+    </>
   )
 }
 
 /**
  * Static Data
- * 
- * Performance Note:
- * - Defined at module scope (evaluated once)
- * - No runtime computation needed
- * - Can be tree-shaken if not used
  */
 const expertise = [
   {
@@ -176,6 +189,11 @@ const expertise = [
 ]
 
 const featuredPages = [
+  {
+    title: 'Tech Stack',
+    href: '/tech-stack',
+    description: 'Comprehensive overview of my technical expertise with realistic skill assessments and production context.',
+  },
   {
     title: 'Engineering Decisions',
     href: '/engineering-decisions',

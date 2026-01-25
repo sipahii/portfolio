@@ -3,6 +3,8 @@ import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import { WebVitalsReporter } from '@/components/WebVitalsReporter'
 import { Navigation } from '@/components/Navigation'
+import { SkipToContent } from '@/components/SkipToContent'
+import { FocusManager } from '@/components/FocusManager'
 
 /**
  * Font Loading Strategy
@@ -113,23 +115,29 @@ export default function RootLayout({
         {/* Web Vitals reporting for performance monitoring */}
         <WebVitalsReporter />
         
+        {/* Focus management for route changes and screen reader announcements */}
+        <FocusManager />
+        
+        {/* Skip to content link - keyboard accessibility */}
+        <SkipToContent />
+        
         {/* Navigation component - stable height prevents CLS */}
         <Navigation />
         
         {/* Main content area with stable layout */}
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           {children}
         </main>
         
-        {/* Footer with stable height */}
-        <footer className="border-t border-gray-200 dark:border-gray-800 mt-auto">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="text-center text-sm text-gray-600 dark:text-gray-400">
-              <p>
+        {/* Dark Theme Footer */}
+        <footer className="border-t border-neon-purple/20 mt-auto bg-dark-900" role="contentinfo">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="text-center">
+              <p className="text-sm text-gray-400 mb-3">
                 Built with Next.js App Router, React, and TypeScript
               </p>
-              <p className="mt-2">
-                Optimized for Core Web Vitals · LCP &lt; 2.5s · CLS &lt; 0.1 · INP &lt; 200ms
+              <p className="text-sm text-gray-500">
+                Optimized for Core Web Vitals · <span className="text-neon font-semibold">LCP &lt; 2.5s · CLS &lt; 0.1 · INP &lt; 200ms</span>
               </p>
             </div>
           </div>

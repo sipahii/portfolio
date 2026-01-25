@@ -99,67 +99,70 @@ export default function PerformancePage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Performance Dashboard
+    <div className="min-h-screen bg-dark-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div className="mb-16">
+          <h1 className="text-6xl sm:text-7xl font-black mb-6 animate-fade-in-up">
+            <span className="text-neon">Performance Dashboard</span>
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400">
+          <p className="text-xl text-gray-400 animate-fade-in-up delay-100">
             Real-time Core Web Vitals metrics for this portfolio. All metrics are measured
             using the Web Vitals API and reflect actual user experience.
           </p>
         </div>
 
         {/* Core Web Vitals Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {isLoading ? (
-            // Skeleton loaders to prevent CLS
+            // Skeleton loaders
             <>
               {[1, 2, 3, 4, 5].map((i) => (
                 <div
                   key={i}
-                  className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 animate-pulse"
-                  style={{ height: '200px' }}
+                  className="card-clean card-hover"
+                  style={{ height: '240px' }}
                 >
-                  <div className="h-4 bg-gray-300 dark:bg-gray-700 rounded w-1/3 mb-4"></div>
-                  <div className="h-8 bg-gray-300 dark:bg-gray-700 rounded w-2/3 mb-2"></div>
-                  <div className="h-3 bg-gray-300 dark:bg-gray-700 rounded w-full"></div>
+                  <div className="h-4 bg-dark-700 rounded w-1/3 mb-4 shimmer"></div>
+                  <div className="h-8 bg-dark-700 rounded w-2/3 mb-2 shimmer"></div>
+                  <div className="h-3 bg-dark-700 rounded w-full shimmer"></div>
                 </div>
               ))}
             </>
           ) : (
-            metrics.map((metric) => (
-              <MetricCard key={metric.name} metric={metric} />
+            metrics.map((metric, index) => (
+              <div key={metric.name} className="animate-scale-in" style={{ animationDelay: `${index * 100}ms` }}>
+                <MetricCard metric={metric} />
+              </div>
             ))
           )}
         </div>
 
         {/* Optimization Strategies */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-            Optimization Strategies
+        <section className="mb-20">
+          <h2 className="text-5xl font-black mb-10">
+            <span className="text-neon">Optimization Strategies</span>
           </h2>
-          <div className="space-y-6">
-            {optimizations.map((opt) => (
+          <div className="space-y-8">
+            {optimizations.map((opt, index) => (
               <div
                 key={opt.title}
-                className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700"
+                className="card-neon card-hover animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-start">
-                  <span className="text-3xl mr-4">{opt.icon}</span>
+                  <span className="text-5xl mr-4">{opt.icon}</span>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-2xl font-bold text-white mb-3">
                       {opt.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400 mb-3">
+                    <p className="text-gray-400 mb-4 leading-relaxed">
                       {opt.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {opt.techniques.map((technique) => (
                         <span
                           key={technique}
-                          className="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 text-sm rounded-full"
+                          className="badge-neon"
                         >
                           {technique}
                         </span>
@@ -173,29 +176,47 @@ export default function PerformancePage() {
         </section>
 
         {/* Performance Budget */}
-        <section className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-8 border border-blue-200 dark:border-blue-800">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Performance Budget
+        <section className="card-holographic card-hover">
+          <h2 className="text-3xl font-bold text-white mb-8">
+            <span className="text-neon">Performance Budget</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="terminal-box">
+              <h3 className="font-bold text-neon-cyan mb-4 text-lg">
                 JavaScript Budget
               </h3>
-              <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                <li>• Initial JS: &lt; 100KB (gzipped)</li>
-                <li>• Total JS: &lt; 300KB (gzipped)</li>
-                <li>• Third-party: &lt; 50KB (gzipped)</li>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <span className="text-neon-cyan mr-2">•</span>
+                  Initial JS: &lt; 100KB (gzipped)
+                </li>
+                <li className="flex items-center">
+                  <span className="text-neon-cyan mr-2">•</span>
+                  Total JS: &lt; 300KB (gzipped)
+                </li>
+                <li className="flex items-center">
+                  <span className="text-neon-cyan mr-2">•</span>
+                  Third-party: &lt; 50KB (gzipped)
+                </li>
               </ul>
             </div>
-            <div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-3">
+            <div className="terminal-box border-neon-purple/30">
+              <h3 className="font-bold text-neon-purple mb-4 text-lg">
                 Core Web Vitals Targets
               </h3>
-              <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                <li>• LCP: &lt; 2.5s (75th percentile)</li>
-                <li>• INP: &lt; 200ms (75th percentile)</li>
-                <li>• CLS: &lt; 0.1 (75th percentile)</li>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <span className="text-neon-purple mr-2">•</span>
+                  LCP: &lt; 2.5s (75th percentile)
+                </li>
+                <li className="flex items-center">
+                  <span className="text-neon-purple mr-2">•</span>
+                  INP: &lt; 200ms (75th percentile)
+                </li>
+                <li className="flex items-center">
+                  <span className="text-neon-purple mr-2">•</span>
+                  CLS: &lt; 0.1 (75th percentile)
+                </li>
               </ul>
             </div>
           </div>
@@ -206,7 +227,7 @@ export default function PerformancePage() {
 }
 
 /**
- * Metric Card Component
+ * Metric Card Component - Enhanced Design
  * 
  * Performance:
  * - Pure component (no unnecessary re-renders)
@@ -214,49 +235,23 @@ export default function PerformancePage() {
  * - Fixed dimensions to prevent CLS
  */
 function MetricCard({ metric }: { metric: Metric }) {
-  const getRatingColor = (rating: string) => {
-    switch (rating) {
-      case 'good':
-        return 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800'
-      case 'needs-improvement':
-        return 'bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800'
-      case 'poor':
-        return 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'
-      default:
-        return 'bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700'
-    }
-  }
-
-  const getRatingTextColor = (rating: string) => {
-    switch (rating) {
-      case 'good':
-        return 'text-green-600 dark:text-green-400'
-      case 'needs-improvement':
-        return 'text-yellow-600 dark:text-yellow-400'
-      case 'poor':
-        return 'text-red-600 dark:text-red-400'
-      default:
-        return 'text-gray-600 dark:text-gray-400'
-    }
-  }
-
   return (
-    <div className={`rounded-lg p-6 border ${getRatingColor(metric.rating)}`}>
-      <div className="flex items-center justify-between mb-2">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+    <div className="card-clean card-hover">
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-lg font-bold text-white">
           {metric.name}
         </h3>
-        <span className={`text-xs font-medium uppercase ${getRatingTextColor(metric.rating)}`}>
+        <span className="badge-neon text-xs uppercase">
           {metric.rating}
         </span>
       </div>
-      <div className={`text-3xl font-bold mb-2 ${getRatingTextColor(metric.rating)}`}>
+      <div className="text-5xl font-black mb-3 text-neon">
         {metric.name === 'CLS' ? metric.value.toFixed(3) : `${metric.value}ms`}
       </div>
-      <div className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-        Target: {metric.target}
+      <div className="text-sm text-gray-400 mb-3">
+        Target: <span className="font-bold text-neon-purple">{metric.target}</span>
       </div>
-      <p className="text-xs text-gray-500 dark:text-gray-500">
+      <p className="text-xs text-gray-500 leading-relaxed">
         {metric.description}
       </p>
     </div>

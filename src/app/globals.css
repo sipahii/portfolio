@@ -1,11 +1,12 @@
 /**
- * Global Styles
+ * Global Styles - Clean Dark Theme (No Shadows)
  * 
- * Performance Notes:
- * - Using Tailwind's base, components, and utilities layers
- * - CSS variables for theming without layout shift
- * - Prefers-reduced-motion media query for accessibility
- * - Font display strategy handled by next/font
+ * Design Philosophy:
+ * - Dark-first, minimal aesthetic
+ * - No shadows or glow effects
+ * - No hover transforms
+ * - Clean, flat design
+ * - Focus on content and typography
  */
 
 @tailwind base;
@@ -13,24 +14,21 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0A0A0F;
+  --foreground: #FFFFFF;
+  --glass-background: rgba(26, 26, 36, 0.7);
+  --glass-border: rgba(183, 148, 246, 0.2);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Respect user's motion preferences for accessibility */
+/* Respect user's motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -38,7 +36,274 @@ body {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+  }
+}
+
+@layer base {
+  /* Bold, clean typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+    letter-spacing: -0.02em;
+  }
+  
+  h1 {
+    @apply text-5xl sm:text-6xl lg:text-7xl;
+    line-height: 1.1;
+    font-weight: 900;
+  }
+  
+  h2 {
+    @apply text-4xl sm:text-5xl lg:text-6xl;
+    line-height: 1.15;
+    font-weight: 800;
+  }
+  
+  h3 {
+    @apply text-3xl sm:text-4xl;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  
+  /* Focus states - WCAG 2.4.7 Focus Visible (Level AA) */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-neon-purple ring-offset-2 ring-offset-dark-900;
+    /* Smooth transition for better UX */
+    transition: box-shadow 0.2s ease;
+  }
+  
+  /* Enhanced focus for links */
+  a:focus-visible {
+    @apply ring-2 ring-neon-cyan ring-offset-2 ring-offset-dark-900;
+  }
+  
+  /* Enhanced focus for buttons */
+  button:focus-visible {
+    @apply ring-2 ring-neon-purple ring-offset-2 ring-offset-dark-900;
+  }
+  
+  /* Enhanced focus for interactive cards */
+  a.card-holographic:focus-visible,
+  a.card-neon:focus-visible,
+  a.card-clean:focus-visible {
+    @apply ring-4 ring-neon-cyan ring-offset-4;
+  }
+  
+  /* Enhanced focus for buttons with classes */
+  .btn-neon:focus-visible,
+  .btn-neon-outline:focus-visible {
+    @apply ring-4 ring-offset-4 ring-neon-cyan;
+  }
+  
+  /* Skip link focus state - high contrast */
+  a[href="#main-content"]:focus-visible {
+    @apply ring-4 ring-white ring-offset-0;
+  }
+  
+  /* Focus for headings when programmatically focused */
+  h1:focus,
+  h2:focus,
+  h3:focus {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+  /* Neon text effects */
+  .text-neon {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #00D9FF 0%, #B794F6 50%, #FF00FF 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+  }
+  
+  /* Glass morphism - clean version */
+  .glass-dark {
+    background: var(--glass-background);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+  }
+  
+  /* Animated gradient border on hover */
+  .card-hover {
+    @apply relative;
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover::before {
+    content: '';
+    @apply absolute rounded-xl pointer-events-none;
+    inset: -2px;
+    padding: 2px;
+    background: linear-gradient(135deg, #00D9FF, #B794F6, #FF00FF);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card-hover:hover::before {
+    opacity: 1;
+  }
+  
+  /* Clean card - no shadows */
+  .card-clean {
+    @apply bg-dark-800 rounded-xl p-8 relative;
+    @apply border border-neon-purple/20;
+    @apply transition-all duration-300;
+    z-index: 1;
+  }
+  
+  /* Card with neon border */
+  .card-neon {
+    @apply bg-dark-800 rounded-xl p-8 relative;
+    @apply border border-neon-purple/30;
+    @apply transition-all duration-300;
+    z-index: 1;
+  }
+  
+  /* Holographic card - border only */
+  .card-holographic {
+    @apply bg-dark-800 rounded-xl p-8 relative;
+    @apply border-2 border-transparent;
+    @apply transition-all duration-300;
+    background-image: linear-gradient(#13131A, #13131A), linear-gradient(135deg, #00D9FF, #B794F6, #FF00FF);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    z-index: 1;
+  }
+  
+  /* Cyber grid background */
+  .bg-cyber-grid {
+    background-image: 
+      repeating-linear-gradient(
+        0deg,
+        rgba(183, 148, 246, 0.03) 0px,
+        transparent 1px,
+        transparent 40px,
+        rgba(183, 148, 246, 0.03) 41px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        rgba(183, 148, 246, 0.03) 0px,
+        transparent 1px,
+        transparent 40px,
+        rgba(183, 148, 246, 0.03) 41px
+      );
+    background-size: 80px 80px;
+  }
+  
+  /* Scanline effect */
+  .scanline {
+    @apply relative overflow-hidden;
+  }
+  
+  .scanline::after {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(183, 148, 246, 0.1) 50%,
+      transparent 100%
+    );
+    animation: scanline 8s linear infinite;
+    height: 100px;
+  }
+  
+  /* Clean button variants with hover effects */
+  .btn-neon {
+    @apply px-8 py-4 rounded-lg font-bold text-white;
+    @apply bg-neon-purple border-2 border-neon-purple;
+    @apply transition-all duration-300 cursor-pointer;
+    @apply relative;
+    z-index: 1;
+  }
+  
+  .btn-neon::before {
+    content: '';
+    @apply absolute rounded-lg pointer-events-none;
+    inset: -2px;
+    padding: 2px;
+    background: linear-gradient(135deg, #00D9FF, #B794F6, #FF00FF);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .btn-neon:hover::before {
+    opacity: 1;
+  }
+  
+  .btn-neon-outline {
+    @apply px-8 py-4 rounded-lg font-bold text-neon-purple;
+    @apply bg-transparent border-2 border-neon-purple;
+    @apply transition-all duration-300 cursor-pointer;
+    @apply relative;
+    z-index: 1;
+  }
+  
+  .btn-neon-outline::before {
+    content: '';
+    @apply absolute rounded-lg pointer-events-none;
+    inset: -2px;
+    padding: 2px;
+    background: linear-gradient(135deg, #00D9FF, #B794F6, #FF00FF);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .btn-neon-outline:hover::before {
+    opacity: 1;
+  }
+  
+  /* Terminal-style box */
+  .terminal-box {
+    @apply bg-dark-900 rounded-lg p-6;
+    @apply border border-neon-cyan/30;
+    @apply font-mono text-sm;
+  }
+  
+  /* Badge with clean border */
+  .badge-neon {
+    @apply px-4 py-2 rounded-full;
+    @apply bg-neon-purple/10 border border-neon-purple/50;
+    @apply text-neon-purple font-semibold text-sm;
+  }
+  
+  /* Floating gradient orb */
+  .gradient-orb {
+    @apply absolute rounded-full blur-3xl;
+    @apply opacity-30 pointer-events-none;
+    background: radial-gradient(circle, #B794F6, #00D9FF);
+    animation: float 8s ease-in-out infinite, rotateSlow 20s linear infinite;
+  }
+  
+  /* Collapsible details styling */
+  details summary {
+    user-select: none;
+  }
+  
+  details[open] summary span:first-child {
+    transform: rotate(90deg);
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  
+  details summary::-webkit-details-marker {
+    display: none;
   }
 }
 
@@ -46,11 +311,116 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+  /* Animation delays */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
 }
 
-/* Focus visible states for accessibility */
-@layer base {
-  *:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500;
+/* 
+ * Tech Stack Page Animations
+ * 
+ * Performance Optimizations:
+ * - GPU-accelerated transforms only (translate, scale, opacity)
+ * - No layout-triggering properties (no width, height, margin changes)
+ * - Respects prefers-reduced-motion
+ * - Will-change for optimized compositing
+ */
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  33% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  66% {
+    transform: translateY(10px) translateX(-10px);
+  }
+}
+
+@keyframes rotateSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply animations with GPU acceleration */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.8s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+/* 
+ * Skill Rating Animations
+ * CSS-only, no JavaScript required
+ */
+.skill-rating-fill {
+  /* GPU-accelerated width transition */
+  will-change: width;
+}
+
+.skill-rating-shine {
+  /* Shine effect that sweeps across on page load */
+  animation: shine 2s ease-in-out 0.5s;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
   }
 }

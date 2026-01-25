@@ -1,12 +1,13 @@
 /**
- * Card Component
+ * Card Component - Clean Dark Theme (No Shadows/Hovers)
  * 
- * Purpose: Reusable card container with consistent styling
+ * Purpose: Clean cards with borders only
  * 
  * Performance:
  * - Server Component by default
- * - CSS-only hover effects
- * - Stable dimensions
+ * - No hover effects
+ * - No shadows
+ * - Stable, flat design
  */
 
 import { ReactNode } from 'react'
@@ -17,15 +18,25 @@ interface CardProps {
   className?: string
   href?: string
   hoverable?: boolean
+  variant?: 'default' | 'neon' | 'holographic' | 'glass'
 }
 
-export function Card({ children, className = '', href, hoverable = false }: CardProps) {
-  const baseStyles = `bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 ${className}`
-  const hoverStyles = hoverable
-    ? 'hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-lg transition-all'
-    : ''
+export function Card({ 
+  children, 
+  className = '', 
+  href, 
+  hoverable = false,
+  variant = 'default'
+}: CardProps) {
+  const variantStyles = {
+    default: 'card-clean',
+    neon: 'card-neon',
+    holographic: 'card-holographic',
+    glass: 'glass-dark rounded-xl p-8',
+  }
 
-  const cardStyles = `${baseStyles} ${hoverStyles}`
+  const hoverClass = (href || hoverable) ? 'card-hover cursor-pointer' : ''
+  const cardStyles = `${variantStyles[variant]} ${hoverClass} ${className}`
 
   if (href) {
     return (

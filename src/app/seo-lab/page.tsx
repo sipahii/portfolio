@@ -33,29 +33,30 @@ export const metadata: Metadata = {
 
 export default function SEOLabPage() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-          SEO Laboratory
+    <div className="min-h-screen bg-dark-900">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <h1 className="text-5xl sm:text-6xl font-bold mb-6 animate-fade-in-up">
+          <span className="text-neon">SEO Laboratory</span>
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400 mb-12">
+        <p className="text-xl text-gray-400 mb-16 animate-fade-in-up animate-delay-100">
           Understanding how different rendering strategies affect SEO, performance, and user experience.
           This page itself is server-rendered to demonstrate optimal SEO practices.
         </p>
 
         {/* Rendering Strategies Comparison */}
-        <div className="space-y-8 mb-12">
-          {strategies.map((strategy) => (
+        <div className="space-y-10 mb-20">
+          {strategies.map((strategy, index) => (
             <article
               key={strategy.name}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700"
+              className="card-clean card-hover animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-start justify-between mb-4">
+              <div className="flex items-start justify-between mb-6">
                 <div>
-                  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
+                  <h2 className="text-3xl font-semibold text-white mb-2">
                     {strategy.name}
                   </h2>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p className="text-sm text-gray-400">
                     {strategy.acronym}
                   </p>
                 </div>
@@ -65,38 +66,44 @@ export default function SEOLabPage() {
                 </div>
               </div>
 
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
+              <p className="text-gray-300 mb-6 leading-relaxed">
                 {strategy.description}
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div>
-                  <h3 className="font-semibold text-green-600 dark:text-green-400 mb-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="terminal-box">
+                  <h3 className="font-semibold text-neon-cyan mb-3 text-lg">
                     ✓ Advantages
                   </h3>
-                  <ul className="space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                  <ul className="space-y-2">
                     {strategy.pros.map((pro, i) => (
-                      <li key={i}>• {pro}</li>
+                      <li key={i} className="flex items-start text-sm text-gray-300">
+                        <span className="text-neon-cyan mr-2 mt-1">•</span>
+                        <span className="flex-1">{pro}</span>
+                      </li>
                     ))}
                   </ul>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-red-600 dark:text-red-400 mb-2">
+                <div className="terminal-box border-neon-pink/30">
+                  <h3 className="font-semibold text-neon-pink mb-3 text-lg">
                     ✗ Disadvantages
                   </h3>
-                  <ul className="space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                  <ul className="space-y-2">
                     {strategy.cons.map((con, i) => (
-                      <li key={i}>• {con}</li>
+                      <li key={i} className="flex items-start text-sm text-gray-300">
+                        <span className="text-neon-pink mr-2 mt-1">•</span>
+                        <span className="flex-1">{con}</span>
+                      </li>
                     ))}
                   </ul>
                 </div>
               </div>
 
-              <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+              <div className="glass-dark rounded-lg p-6 card-hover">
+                <h3 className="font-semibold text-white mb-2 text-lg">
                   Best Use Cases
                 </h3>
-                <p className="text-sm text-gray-700 dark:text-gray-300">
+                <p className="text-sm text-gray-300 leading-relaxed">
                   {strategy.useCases}
                 </p>
               </div>
@@ -105,19 +112,19 @@ export default function SEOLabPage() {
         </div>
 
         {/* SEO Best Practices */}
-        <section className="bg-green-50 dark:bg-green-900/20 rounded-lg p-8 border border-green-200 dark:border-green-800 mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            SEO Best Practices for Next.js
+        <section className="card-clean card-hover mb-20">
+          <h2 className="text-3xl font-bold text-white mb-8">
+            <span className="text-neon">SEO Best Practices for Next.js</span>
           </h2>
-          <div className="space-y-4">
+          <div className="space-y-6">
             {seoBestPractices.map((practice, i) => (
               <div key={i} className="flex items-start">
-                <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✓</span>
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
+                <span className="text-neon-purple mr-4 text-2xl">✓</span>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-white mb-2 text-lg">
                     {practice.title}
                   </h3>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-gray-300 leading-relaxed">
                     {practice.description}
                   </p>
                 </div>
@@ -128,14 +135,14 @@ export default function SEOLabPage() {
 
         {/* Structured Data Example */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-2xl font-bold text-white mb-4">
             Structured Data (JSON-LD)
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
+          <p className="text-gray-400 mb-4">
             This page includes JSON-LD structured data for better search engine understanding.
             View page source to see the implementation.
           </p>
-          <div className="bg-gray-900 dark:bg-gray-950 rounded-lg p-6 overflow-x-auto">
+          <div className="terminal-box">
             <pre className="text-green-400 text-sm font-mono">
 {`{
   "@context": "https://schema.org",
@@ -154,46 +161,46 @@ export default function SEOLabPage() {
 
         {/* Performance Comparison Table */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-2xl font-bold text-white mb-4">
             Performance Comparison
           </h2>
-          <div className="overflow-x-auto">
-            <table className="min-w-full border border-gray-200 dark:border-gray-700">
-              <thead className="bg-gray-50 dark:bg-gray-800">
+          <div className="overflow-x-auto card-clean card-hover">
+            <table className="min-w-full border border-neon-purple/20">
+              <thead className="bg-dark-700">
                 <tr>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-white border-b border-neon-purple/20">
                     Metric
                   </th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700">
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-white border-b border-neon-purple/20">
                     SSR
                   </th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700">
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-white border-b border-neon-purple/20">
                     CSR
                   </th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700">
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-white border-b border-neon-purple/20">
                     ISR
                   </th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700">
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-white border-b border-neon-purple/20">
                     SSG
                   </th>
                 </tr>
               </thead>
-              <tbody className="bg-white dark:bg-gray-900">
+              <tbody className="bg-dark-800">
                 {performanceComparison.map((row, i) => (
-                  <tr key={i} className="border-b border-gray-200 dark:border-gray-700">
-                    <td className="px-4 py-3 text-sm font-medium text-gray-900 dark:text-white">
+                  <tr key={i} className="border-b border-neon-purple/10">
+                    <td className="px-4 py-3 text-sm font-medium text-white">
                       {row.metric}
                     </td>
-                    <td className="px-4 py-3 text-center text-sm text-gray-700 dark:text-gray-300">
+                    <td className="px-4 py-3 text-center text-sm text-gray-300">
                       {row.ssr}
                     </td>
-                    <td className="px-4 py-3 text-center text-sm text-gray-700 dark:text-gray-300">
+                    <td className="px-4 py-3 text-center text-sm text-gray-300">
                       {row.csr}
                     </td>
-                    <td className="px-4 py-3 text-center text-sm text-gray-700 dark:text-gray-300">
+                    <td className="px-4 py-3 text-center text-sm text-gray-300">
                       {row.isr}
                     </td>
-                    <td className="px-4 py-3 text-center text-sm text-gray-700 dark:text-gray-300">
+                    <td className="px-4 py-3 text-center text-sm text-gray-300">
                       {row.ssg}
                     </td>
                   </tr>
@@ -229,19 +236,21 @@ export default function SEOLabPage() {
  * Score Badge Components
  */
 function SEOScore({ score }: { score: number }) {
-  const color = score >= 90 ? 'green' : score >= 70 ? 'yellow' : 'red'
+  const color = score >= 90 ? 'text-neon-cyan' : score >= 70 ? 'text-yellow-400' : 'text-neon-pink'
   return (
-    <div className={`px-3 py-1 bg-${color}-50 dark:bg-${color}-900/20 text-${color}-700 dark:text-${color}-300 text-sm font-medium rounded-full`}>
-      SEO: {score}/100
+    <div className="terminal-box flex items-center gap-2">
+      <span className="text-xs text-gray-400">SEO:</span>
+      <span className={`font-bold ${color}`}>{score}/100</span>
     </div>
   )
 }
 
 function PerformanceScore({ score }: { score: number }) {
-  const color = score >= 90 ? 'green' : score >= 70 ? 'yellow' : 'red'
+  const color = score >= 90 ? 'text-neon-cyan' : score >= 70 ? 'text-yellow-400' : 'text-neon-pink'
   return (
-    <div className={`px-3 py-1 bg-${color}-50 dark:bg-${color}-900/20 text-${color}-700 dark:text-${color}-300 text-sm font-medium rounded-full`}>
-      Perf: {score}/100
+    <div className="terminal-box flex items-center gap-2">
+      <span className="text-xs text-gray-400">Perf:</span>
+      <span className={`font-bold ${color}`}>{score}/100</span>
     </div>
   )
 }
