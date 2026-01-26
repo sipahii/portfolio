@@ -51,16 +51,16 @@ export default function SEOLabPage() {
               className="card-clean card-hover animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-start justify-between mb-6">
-                <div>
-                  <h2 className="text-3xl font-semibold text-white mb-2">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
+                <div className="flex-1">
+                  <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-2">
                     {strategy.name}
                   </h2>
                   <p className="text-sm text-gray-400">
                     {strategy.acronym}
                   </p>
                 </div>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-row sm:flex-col gap-2">
                   <SEOScore score={strategy.seoScore} />
                   <PerformanceScore score={strategy.performanceScore} />
                 </div>
@@ -138,12 +138,12 @@ export default function SEOLabPage() {
           <h2 className="text-2xl font-bold text-white mb-4">
             Structured Data (JSON-LD)
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-gray-400 mb-4 text-sm sm:text-base">
             This page includes JSON-LD structured data for better search engine understanding.
             View page source to see the implementation.
           </p>
-          <div className="terminal-box">
-            <pre className="text-green-400 text-sm font-mono">
+          <div className="terminal-box overflow-x-auto">
+            <pre className="text-green-400 text-xs sm:text-sm font-mono whitespace-pre overflow-x-auto">
 {`{
   "@context": "https://schema.org",
   "@type": "TechArticle",
@@ -164,49 +164,51 @@ export default function SEOLabPage() {
           <h2 className="text-2xl font-bold text-white mb-4">
             Performance Comparison
           </h2>
-          <div className="overflow-x-auto card-clean card-hover">
-            <table className="min-w-full border border-neon-purple/20">
-              <thead className="bg-dark-700">
-                <tr>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-white border-b border-neon-purple/20">
-                    Metric
-                  </th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold text-white border-b border-neon-purple/20">
-                    SSR
-                  </th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold text-white border-b border-neon-purple/20">
-                    CSR
-                  </th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold text-white border-b border-neon-purple/20">
-                    ISR
-                  </th>
-                  <th className="px-4 py-3 text-center text-sm font-semibold text-white border-b border-neon-purple/20">
-                    SSG
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-dark-800">
-                {performanceComparison.map((row, i) => (
-                  <tr key={i} className="border-b border-neon-purple/10">
-                    <td className="px-4 py-3 text-sm font-medium text-white">
-                      {row.metric}
-                    </td>
-                    <td className="px-4 py-3 text-center text-sm text-gray-300">
-                      {row.ssr}
-                    </td>
-                    <td className="px-4 py-3 text-center text-sm text-gray-300">
-                      {row.csr}
-                    </td>
-                    <td className="px-4 py-3 text-center text-sm text-gray-300">
-                      {row.isr}
-                    </td>
-                    <td className="px-4 py-3 text-center text-sm text-gray-300">
-                      {row.ssg}
-                    </td>
+          <div className="card-clean card-hover overflow-x-auto -mx-4 sm:mx-0">
+            <div className="inline-block min-w-full align-middle px-4 sm:px-0">
+              <table className="min-w-full border border-neon-purple/20">
+                <thead className="bg-dark-700">
+                  <tr>
+                    <th className="px-2 sm:px-4 py-3 text-left text-xs sm:text-sm font-semibold text-white border-b border-neon-purple/20 whitespace-nowrap">
+                      Metric
+                    </th>
+                    <th className="px-2 sm:px-4 py-3 text-center text-xs sm:text-sm font-semibold text-white border-b border-neon-purple/20">
+                      SSR
+                    </th>
+                    <th className="px-2 sm:px-4 py-3 text-center text-xs sm:text-sm font-semibold text-white border-b border-neon-purple/20">
+                      CSR
+                    </th>
+                    <th className="px-2 sm:px-4 py-3 text-center text-xs sm:text-sm font-semibold text-white border-b border-neon-purple/20">
+                      ISR
+                    </th>
+                    <th className="px-2 sm:px-4 py-3 text-center text-xs sm:text-sm font-semibold text-white border-b border-neon-purple/20">
+                      SSG
+                    </th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody className="bg-dark-800">
+                  {performanceComparison.map((row, i) => (
+                    <tr key={i} className="border-b border-neon-purple/10">
+                      <td className="px-2 sm:px-4 py-3 text-xs sm:text-sm font-medium text-white whitespace-nowrap">
+                        {row.metric}
+                      </td>
+                      <td className="px-2 sm:px-4 py-3 text-center text-xs sm:text-sm text-gray-300">
+                        {row.ssr}
+                      </td>
+                      <td className="px-2 sm:px-4 py-3 text-center text-xs sm:text-sm text-gray-300">
+                        {row.csr}
+                      </td>
+                      <td className="px-2 sm:px-4 py-3 text-center text-xs sm:text-sm text-gray-300">
+                        {row.isr}
+                      </td>
+                      <td className="px-2 sm:px-4 py-3 text-center text-xs sm:text-sm text-gray-300">
+                        {row.ssg}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
       </div>
@@ -238,9 +240,9 @@ export default function SEOLabPage() {
 function SEOScore({ score }: { score: number }) {
   const color = score >= 90 ? 'text-neon-cyan' : score >= 70 ? 'text-yellow-400' : 'text-neon-pink'
   return (
-    <div className="terminal-box flex items-center gap-2">
-      <span className="text-xs text-gray-400">SEO:</span>
-      <span className={`font-bold ${color}`}>{score}/100</span>
+    <div className="terminal-box flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2">
+      <span className="text-xs text-gray-400 whitespace-nowrap">SEO:</span>
+      <span className={`font-bold text-sm sm:text-base ${color}`}>{score}/100</span>
     </div>
   )
 }
@@ -248,9 +250,9 @@ function SEOScore({ score }: { score: number }) {
 function PerformanceScore({ score }: { score: number }) {
   const color = score >= 90 ? 'text-neon-cyan' : score >= 70 ? 'text-yellow-400' : 'text-neon-pink'
   return (
-    <div className="terminal-box flex items-center gap-2">
-      <span className="text-xs text-gray-400">Perf:</span>
-      <span className={`font-bold ${color}`}>{score}/100</span>
+    <div className="terminal-box flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2">
+      <span className="text-xs text-gray-400 whitespace-nowrap">Perf:</span>
+      <span className={`font-bold text-sm sm:text-base ${color}`}>{score}/100</span>
     </div>
   )
 }

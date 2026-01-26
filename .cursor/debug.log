@@ -1,0 +1,652 @@
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408126704,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408126736,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408126760,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408126929,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408126942,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408126954,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408126967,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408126986,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408159075,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408159211,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408159211,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":60,"activeAnimations":24},"timestamp":1769408160254,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":120,"activeAnimations":24},"timestamp":1769408161304,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":180,"activeAnimations":24},"timestamp":1769408162303,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":240,"activeAnimations":24},"timestamp":1769408163304,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":300,"activeAnimations":15},"timestamp":1769408164669,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":360,"activeAnimations":15},"timestamp":1769408165670,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":420,"activeAnimations":15},"timestamp":1769408166671,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":480,"activeAnimations":15},"timestamp":1769408167679,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408168038,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408168194,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408168195,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":1,"scrollY":21,"timestamp":1769408168820},"timestamp":1769408168821,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":60,"activeAnimations":15},"timestamp":1769408169253,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":2,"scrollY":4940,"timestamp":1769408169837},"timestamp":1769408169837,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":120,"activeAnimations":15},"timestamp":1769408170304,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":3,"scrollY":9499,"timestamp":1769408170854},"timestamp":1769408170854,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":180,"activeAnimations":15},"timestamp":1769408171303,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":4,"scrollY":9566,"timestamp":1769408172137},"timestamp":1769408172137,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":240,"activeAnimations":15},"timestamp":1769408172307,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":5,"scrollY":1921,"timestamp":1769408173141},"timestamp":1769408173141,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":300,"activeAnimations":15},"timestamp":1769408173308,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":360,"activeAnimations":15},"timestamp":1769408174309,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":1},"timestamp":1769408174425,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":2},"timestamp":1769408174511,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":true},"timestamp":1769408174515,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":true},"timestamp":1769408174516,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:95","message":"Focus trap DOM query","data":{"focusableCount":7},"timestamp":1769408174517,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":2},"timestamp":1769408175290,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":420,"activeAnimations":15},"timestamp":1769408175308,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":3},"timestamp":1769408175377,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:60","message":"Escape listener cleanup","data":{},"timestamp":1769408175380,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:132","message":"Focus trap listener cleanup","data":{},"timestamp":1769408175381,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408175382,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408175383,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":4},"timestamp":1769408175391,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":6,"scrollY":1,"timestamp":1769408176184},"timestamp":1769408176185,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":480,"activeAnimations":64},"timestamp":1769408176463,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":7,"scrollY":4968,"timestamp":1769408177194},"timestamp":1769408177195,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":540,"activeAnimations":64},"timestamp":1769408177467,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":8,"scrollY":8427,"timestamp":1769408178195},"timestamp":1769408178195,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":600,"activeAnimations":23},"timestamp":1769408178483,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":9,"scrollY":11003,"timestamp":1769408179210},"timestamp":1769408179210,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":660,"activeAnimations":23},"timestamp":1769408179476,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":720,"activeAnimations":23},"timestamp":1769408180477,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":3},"timestamp":1769408181248,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":5},"timestamp":1769408181351,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":true},"timestamp":1769408181353,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":true},"timestamp":1769408181354,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:95","message":"Focus trap DOM query","data":{"focusableCount":7},"timestamp":1769408181355,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":10,"scrollY":14728,"timestamp":1769408181361},"timestamp":1769408181361,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":780,"activeAnimations":26},"timestamp":1769408181483,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":840,"activeAnimations":23},"timestamp":1769408182486,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":4},"timestamp":1769408182568,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":6},"timestamp":1769408182671,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:60","message":"Escape listener cleanup","data":{},"timestamp":1769408182674,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:132","message":"Focus trap listener cleanup","data":{},"timestamp":1769408182674,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408182675,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408182676,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":11,"scrollY":14345,"timestamp":1769408182680},"timestamp":1769408182680,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":7},"timestamp":1769408182684,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":900,"activeAnimations":10},"timestamp":1769408183587,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":12,"scrollY":1,"timestamp":1769408184376},"timestamp":1769408184376,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":960,"activeAnimations":10},"timestamp":1769408184586,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":13,"scrollY":5017.5,"timestamp":1769408185402},"timestamp":1769408185402,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1020,"activeAnimations":10},"timestamp":1769408185586,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":14,"scrollY":9979.5,"timestamp":1769408186404},"timestamp":1769408186404,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1080,"activeAnimations":10},"timestamp":1769408186588,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1140,"activeAnimations":10},"timestamp":1769408187588,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":5},"timestamp":1769408187819,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":8},"timestamp":1769408187922,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":true},"timestamp":1769408187924,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":true},"timestamp":1769408187925,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:95","message":"Focus trap DOM query","data":{"focusableCount":7},"timestamp":1769408187926,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":15,"scrollY":10362.5,"timestamp":1769408187930},"timestamp":1769408187930,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1200,"activeAnimations":10},"timestamp":1769408188594,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":6},"timestamp":1769408189143,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":9},"timestamp":1769408189246,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:60","message":"Escape listener cleanup","data":{},"timestamp":1769408189248,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:132","message":"Focus trap listener cleanup","data":{},"timestamp":1769408189249,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408189250,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408189251,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":16,"scrollY":9979.5,"timestamp":1769408189254},"timestamp":1769408189254,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":10},"timestamp":1769408189258,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1260,"activeAnimations":11},"timestamp":1769408189604,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1320,"activeAnimations":11},"timestamp":1769408190594,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1380,"activeAnimations":11},"timestamp":1769408191611,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":17,"scrollY":2,"timestamp":1769408192294},"timestamp":1769408192294,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1440,"activeAnimations":11},"timestamp":1769408192600,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":18,"scrollY":2079,"timestamp":1769408193304},"timestamp":1769408193305,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1500,"activeAnimations":11},"timestamp":1769408193604,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":19,"scrollY":2672,"timestamp":1769408194309},"timestamp":1769408194309,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1560,"activeAnimations":11},"timestamp":1769408194610,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":20,"scrollY":3990,"timestamp":1769408195443},"timestamp":1769408195443,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1620,"activeAnimations":11},"timestamp":1769408195614,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1680,"activeAnimations":11},"timestamp":1769408196621,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1740,"activeAnimations":11},"timestamp":1769408197621,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":21,"scrollY":4144.5,"timestamp":1769408198254},"timestamp":1769408198254,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1800,"activeAnimations":11},"timestamp":1769408198625,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":22,"scrollY":178.5,"timestamp":1769408199281},"timestamp":1769408199281,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1860,"activeAnimations":11},"timestamp":1769408199635,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1920,"activeAnimations":11},"timestamp":1769408200636,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":7},"timestamp":1769408200966,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":11},"timestamp":1769408201052,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":true},"timestamp":1769408201054,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":true},"timestamp":1769408201055,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:95","message":"Focus trap DOM query","data":{"focusableCount":7},"timestamp":1769408201056,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1980,"activeAnimations":12},"timestamp":1769408201638,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":8},"timestamp":1769408202403,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":12},"timestamp":1769408202489,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:60","message":"Escape listener cleanup","data":{},"timestamp":1769408202491,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:132","message":"Focus trap listener cleanup","data":{},"timestamp":1769408202492,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408202493,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408202493,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":13},"timestamp":1769408202499,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2040,"activeAnimations":8},"timestamp":1769408202638,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2100,"activeAnimations":6},"timestamp":1769408203644,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":23,"scrollY":2,"timestamp":1769408204422},"timestamp":1769408204422,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2160,"activeAnimations":6},"timestamp":1769408204638,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":24,"scrollY":4108.5,"timestamp":1769408205472},"timestamp":1769408205472,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2220,"activeAnimations":6},"timestamp":1769408205643,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2280,"activeAnimations":6},"timestamp":1769408206648,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2340,"activeAnimations":6},"timestamp":1769408207657,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2400,"activeAnimations":6},"timestamp":1769408208662,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":25,"scrollY":6679,"timestamp":1769408209650},"timestamp":1769408209650,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2460,"activeAnimations":6},"timestamp":1769408209666,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":26,"scrollY":6483,"timestamp":1769408210654},"timestamp":1769408210654,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2520,"activeAnimations":6},"timestamp":1769408210671,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":27,"scrollY":6351,"timestamp":1769408211661},"timestamp":1769408211661,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2580,"activeAnimations":6},"timestamp":1769408211678,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2640,"activeAnimations":6},"timestamp":1769408212682,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":9},"timestamp":1769408213685,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2700,"activeAnimations":6},"timestamp":1769408213686,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":14},"timestamp":1769408213787,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":true},"timestamp":1769408213789,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":true},"timestamp":1769408213790,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:95","message":"Focus trap DOM query","data":{"focusableCount":7},"timestamp":1769408213791,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":28,"scrollY":6315,"timestamp":1769408213795},"timestamp":1769408213795,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2760,"activeAnimations":6},"timestamp":1769408214692,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":10},"timestamp":1769408215039,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":15},"timestamp":1769408215126,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:60","message":"Escape listener cleanup","data":{},"timestamp":1769408215128,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:132","message":"Focus trap listener cleanup","data":{},"timestamp":1769408215129,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408215130,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408215130,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":16},"timestamp":1769408215136,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":29,"scrollY":5932,"timestamp":1769408215133},"timestamp":1769408215133,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2820,"activeAnimations":7},"timestamp":1769408215709,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2880,"activeAnimations":7},"timestamp":1769408216708,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":30,"scrollY":2,"timestamp":1769408217492},"timestamp":1769408217492,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2940,"activeAnimations":7},"timestamp":1769408217709,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3000,"activeAnimations":7},"timestamp":1769408218724,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":31,"scrollY":176,"timestamp":1769408219319},"timestamp":1769408219319,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3060,"activeAnimations":7},"timestamp":1769408219722,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":32,"scrollY":2073,"timestamp":1769408220328},"timestamp":1769408220328,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3120,"activeAnimations":7},"timestamp":1769408220728,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":33,"scrollY":1272,"timestamp":1769408221332},"timestamp":1769408221332,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3180,"activeAnimations":7},"timestamp":1769408221739,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":34,"scrollY":2671,"timestamp":1769408222339},"timestamp":1769408222339,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3240,"activeAnimations":7},"timestamp":1769408222743,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":35,"scrollY":4808,"timestamp":1769408223348},"timestamp":1769408223348,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3300,"activeAnimations":7},"timestamp":1769408223752,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":36,"scrollY":6713,"timestamp":1769408224355},"timestamp":1769408224355,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3360,"activeAnimations":7},"timestamp":1769408224757,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3420,"activeAnimations":7},"timestamp":1769408225774,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":37,"scrollY":9416,"timestamp":1769408225940},"timestamp":1769408225940,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3480,"activeAnimations":7},"timestamp":1769408226768,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3540,"activeAnimations":7},"timestamp":1769408227767,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":11},"timestamp":1769408228216,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":17},"timestamp":1769408228302,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":true},"timestamp":1769408228304,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":true},"timestamp":1769408228304,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:95","message":"Focus trap DOM query","data":{"focusableCount":7},"timestamp":1769408228305,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":38,"scrollY":12811.5,"timestamp":1769408228308},"timestamp":1769408228309,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3600,"activeAnimations":8},"timestamp":1769408228771,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":12},"timestamp":1769408229553,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":18},"timestamp":1769408229622,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:60","message":"Escape listener cleanup","data":{},"timestamp":1769408229623,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:132","message":"Focus trap listener cleanup","data":{},"timestamp":1769408229624,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408229625,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408229625,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":39,"scrollY":12428.5,"timestamp":1769408229628},"timestamp":1769408229628,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":19},"timestamp":1769408229631,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3660,"activeAnimations":4},"timestamp":1769408229789,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3720,"activeAnimations":2},"timestamp":1769408230805,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":40,"scrollY":5,"timestamp":1769408230922},"timestamp":1769408230922,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3780,"activeAnimations":2},"timestamp":1769408231788,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":41,"scrollY":3388,"timestamp":1769408231938},"timestamp":1769408231938,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3840,"activeAnimations":2},"timestamp":1769408232793,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":42,"scrollY":5644,"timestamp":1769408232943},"timestamp":1769408232943,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3900,"activeAnimations":2},"timestamp":1769408233793,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":13},"timestamp":1769408233924,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":20},"timestamp":1769408234045,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":true},"timestamp":1769408234047,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":true},"timestamp":1769408234048,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:95","message":"Focus trap DOM query","data":{"focusableCount":7},"timestamp":1769408234049,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":43,"scrollY":6158,"timestamp":1769408234052},"timestamp":1769408234053,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3960,"activeAnimations":2},"timestamp":1769408234797,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:49","message":"Escape key handler fired","data":{"key":"Tab","mobileMenuOpen":true},"timestamp":1769408235330,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4020,"activeAnimations":2},"timestamp":1769408235797,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:49","message":"Escape key handler fired","data":{"key":"Tab","mobileMenuOpen":true},"timestamp":1769408235832,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:49","message":"Escape key handler fired","data":{"key":"Tab","mobileMenuOpen":true},"timestamp":1769408236036,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:49","message":"Escape key handler fired","data":{"key":"Tab","mobileMenuOpen":true},"timestamp":1769408236201,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:49","message":"Escape key handler fired","data":{"key":"Tab","mobileMenuOpen":true},"timestamp":1769408236393,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4080,"activeAnimations":2},"timestamp":1769408236802,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:49","message":"Escape key handler fired","data":{"key":"Enter","mobileMenuOpen":true},"timestamp":1769408237253,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":21},"timestamp":1769408237254,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:60","message":"Escape listener cleanup","data":{},"timestamp":1769408237257,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:132","message":"Focus trap listener cleanup","data":{},"timestamp":1769408237258,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408237259,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408237259,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":22},"timestamp":1769408237274,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":44,"scrollY":0,"timestamp":1769408237289},"timestamp":1769408237290,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4140,"activeAnimations":7},"timestamp":1769408237808,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4200,"activeAnimations":7},"timestamp":1769408238807,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4260,"activeAnimations":7},"timestamp":1769408239807,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4320,"activeAnimations":7},"timestamp":1769408240807,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4380,"activeAnimations":7},"timestamp":1769408241807,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4440,"activeAnimations":7},"timestamp":1769408242808,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4500,"activeAnimations":7},"timestamp":1769408243807,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4560,"activeAnimations":7},"timestamp":1769408244807,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4620,"activeAnimations":7},"timestamp":1769408245807,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4680,"activeAnimations":7},"timestamp":1769408246807,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4740,"activeAnimations":7},"timestamp":1769408247808,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4800,"activeAnimations":7},"timestamp":1769408248808,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4860,"activeAnimations":7},"timestamp":1769408249808,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4920,"activeAnimations":7},"timestamp":1769408250819,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4980,"activeAnimations":11},"timestamp":1769408251828,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5040,"activeAnimations":11},"timestamp":1769408252828,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5100,"activeAnimations":11},"timestamp":1769408253828,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5160,"activeAnimations":11},"timestamp":1769408254828,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5220,"activeAnimations":11},"timestamp":1769408255827,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5280,"activeAnimations":11},"timestamp":1769408256828,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":1},"timestamp":1769408585606,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408585694,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408585694,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":60,"activeAnimations":24},"timestamp":1769408586604,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":120,"activeAnimations":24},"timestamp":1769408587627,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":180,"activeAnimations":24},"timestamp":1769408588621,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":240,"activeAnimations":24},"timestamp":1769408589620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":300,"activeAnimations":24},"timestamp":1769408590620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":2},"timestamp":1769408590823,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":360,"activeAnimations":70},"timestamp":1769408591622,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":420,"activeAnimations":70},"timestamp":1769408592620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":480,"activeAnimations":29},"timestamp":1769408593620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":540,"activeAnimations":29},"timestamp":1769408594621,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":1,"scrollY":7436.5,"timestamp":1769408594870},"timestamp":1769408594870,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":600,"activeAnimations":29},"timestamp":1769408595621,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":660,"activeAnimations":29},"timestamp":1769408596620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":720,"activeAnimations":29},"timestamp":1769408597620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":780,"activeAnimations":29},"timestamp":1769408598620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":840,"activeAnimations":29},"timestamp":1769408599620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":900,"activeAnimations":29},"timestamp":1769408600621,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":960,"activeAnimations":29},"timestamp":1769408601620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1020,"activeAnimations":29},"timestamp":1769408602621,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1080,"activeAnimations":29},"timestamp":1769408603621,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1140,"activeAnimations":29},"timestamp":1769408604620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1200,"activeAnimations":29},"timestamp":1769408605620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1260,"activeAnimations":29},"timestamp":1769408606620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1320,"activeAnimations":29},"timestamp":1769408607621,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1380,"activeAnimations":29},"timestamp":1769408608619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1440,"activeAnimations":29},"timestamp":1769408609620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1500,"activeAnimations":29},"timestamp":1769408610620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1560,"activeAnimations":29},"timestamp":1769408611620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1620,"activeAnimations":29},"timestamp":1769408612619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1680,"activeAnimations":29},"timestamp":1769408613620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1740,"activeAnimations":29},"timestamp":1769408614621,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1800,"activeAnimations":29},"timestamp":1769408615620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1860,"activeAnimations":29},"timestamp":1769408616620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1920,"activeAnimations":29},"timestamp":1769408617620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":1980,"activeAnimations":29},"timestamp":1769408618620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2040,"activeAnimations":29},"timestamp":1769408619620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2100,"activeAnimations":29},"timestamp":1769408620620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2160,"activeAnimations":29},"timestamp":1769408621620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2220,"activeAnimations":29},"timestamp":1769408622620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2280,"activeAnimations":29},"timestamp":1769408623620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2340,"activeAnimations":29},"timestamp":1769408624620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2400,"activeAnimations":29},"timestamp":1769408625620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2460,"activeAnimations":29},"timestamp":1769408626620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2520,"activeAnimations":29},"timestamp":1769408627620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2580,"activeAnimations":29},"timestamp":1769408628619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2640,"activeAnimations":29},"timestamp":1769408629620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2700,"activeAnimations":29},"timestamp":1769408630620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2760,"activeAnimations":29},"timestamp":1769408631620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2820,"activeAnimations":29},"timestamp":1769408632620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2880,"activeAnimations":29},"timestamp":1769408633620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":2940,"activeAnimations":29},"timestamp":1769408634620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3000,"activeAnimations":29},"timestamp":1769408635620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3060,"activeAnimations":29},"timestamp":1769408636620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3120,"activeAnimations":29},"timestamp":1769408637620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3180,"activeAnimations":29},"timestamp":1769408638620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3240,"activeAnimations":29},"timestamp":1769408639620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3300,"activeAnimations":29},"timestamp":1769408640620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3360,"activeAnimations":29},"timestamp":1769408641620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3420,"activeAnimations":29},"timestamp":1769408642620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3480,"activeAnimations":29},"timestamp":1769408643620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3540,"activeAnimations":29},"timestamp":1769408644619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3600,"activeAnimations":29},"timestamp":1769408645620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3660,"activeAnimations":29},"timestamp":1769408646619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3720,"activeAnimations":29},"timestamp":1769408647620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3780,"activeAnimations":29},"timestamp":1769408648619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3840,"activeAnimations":29},"timestamp":1769408649620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3900,"activeAnimations":29},"timestamp":1769408650619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":3960,"activeAnimations":29},"timestamp":1769408651620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4020,"activeAnimations":29},"timestamp":1769408652619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4080,"activeAnimations":29},"timestamp":1769408653619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4140,"activeAnimations":29},"timestamp":1769408654619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4200,"activeAnimations":29},"timestamp":1769408655619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4260,"activeAnimations":29},"timestamp":1769408656620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4320,"activeAnimations":29},"timestamp":1769408657620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4380,"activeAnimations":29},"timestamp":1769408658619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4440,"activeAnimations":29},"timestamp":1769408659620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4500,"activeAnimations":29},"timestamp":1769408660619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4560,"activeAnimations":29},"timestamp":1769408661619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4620,"activeAnimations":29},"timestamp":1769408662620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4680,"activeAnimations":29},"timestamp":1769408663619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4740,"activeAnimations":29},"timestamp":1769408664620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4800,"activeAnimations":29},"timestamp":1769408665620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4860,"activeAnimations":29},"timestamp":1769408666620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4920,"activeAnimations":29},"timestamp":1769408667620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":4980,"activeAnimations":29},"timestamp":1769408668619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5040,"activeAnimations":29},"timestamp":1769408669619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5100,"activeAnimations":29},"timestamp":1769408670619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5160,"activeAnimations":29},"timestamp":1769408671619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5220,"activeAnimations":29},"timestamp":1769408672620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5280,"activeAnimations":29},"timestamp":1769408673620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5340,"activeAnimations":29},"timestamp":1769408674620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5400,"activeAnimations":29},"timestamp":1769408675620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5460,"activeAnimations":29},"timestamp":1769408676619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5520,"activeAnimations":29},"timestamp":1769408677619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5580,"activeAnimations":29},"timestamp":1769408678619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5640,"activeAnimations":29},"timestamp":1769408679620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5700,"activeAnimations":29},"timestamp":1769408680620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5760,"activeAnimations":29},"timestamp":1769408681619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5820,"activeAnimations":29},"timestamp":1769408682619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5880,"activeAnimations":29},"timestamp":1769408683619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":5940,"activeAnimations":29},"timestamp":1769408684619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6000,"activeAnimations":29},"timestamp":1769408685619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6060,"activeAnimations":29},"timestamp":1769408686620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6120,"activeAnimations":29},"timestamp":1769408687619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6180,"activeAnimations":29},"timestamp":1769408688620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6240,"activeAnimations":29},"timestamp":1769408689619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6300,"activeAnimations":29},"timestamp":1769408690619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6360,"activeAnimations":29},"timestamp":1769408691619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6420,"activeAnimations":29},"timestamp":1769408692620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6480,"activeAnimations":29},"timestamp":1769408693619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6540,"activeAnimations":29},"timestamp":1769408694619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6600,"activeAnimations":29},"timestamp":1769408695619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6660,"activeAnimations":29},"timestamp":1769408696619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6720,"activeAnimations":29},"timestamp":1769408697619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6780,"activeAnimations":29},"timestamp":1769408698619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6840,"activeAnimations":29},"timestamp":1769408699619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6900,"activeAnimations":29},"timestamp":1769408700619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":6960,"activeAnimations":29},"timestamp":1769408701620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7020,"activeAnimations":29},"timestamp":1769408702620,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7080,"activeAnimations":29},"timestamp":1769408703619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":2,"scrollY":7433.5,"timestamp":1769408704586},"timestamp":1769408704586,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7140,"activeAnimations":29},"timestamp":1769408704619,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7200,"activeAnimations":29},"timestamp":1769408705636,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7260,"activeAnimations":29},"timestamp":1769408706636,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7320,"activeAnimations":29},"timestamp":1769408707635,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7380,"activeAnimations":29},"timestamp":1769408708636,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":3,"scrollY":7215.5,"timestamp":1769408708908},"timestamp":1769408708908,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7440,"activeAnimations":29},"timestamp":1769408709635,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7500,"activeAnimations":29},"timestamp":1769408710635,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":4,"scrollY":7099.5,"timestamp":1769408710759},"timestamp":1769408710759,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7560,"activeAnimations":29},"timestamp":1769408711635,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7620,"activeAnimations":29},"timestamp":1769408712635,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":5,"scrollY":6741.5,"timestamp":1769408712792},"timestamp":1769408712792,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7680,"activeAnimations":29},"timestamp":1769408713637,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7740,"activeAnimations":29},"timestamp":1769408714636,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":3},"timestamp":1769408715394,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":6,"scrollY":0,"timestamp":1769408715430},"timestamp":1769408715430,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7800,"activeAnimations":11},"timestamp":1769408715653,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7860,"activeAnimations":5},"timestamp":1769408716652,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7920,"activeAnimations":5},"timestamp":1769408717653,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":7980,"activeAnimations":2},"timestamp":1769408718736,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8040,"activeAnimations":2},"timestamp":1769408719736,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8100,"activeAnimations":2},"timestamp":1769408720735,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8160,"activeAnimations":2},"timestamp":1769408721742,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8220,"activeAnimations":2},"timestamp":1769408722742,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8280,"activeAnimations":2},"timestamp":1769408723742,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8340,"activeAnimations":2},"timestamp":1769408724743,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8400,"activeAnimations":2},"timestamp":1769408725749,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":7,"scrollY":5.5,"timestamp":1769408726649},"timestamp":1769408726649,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8460,"activeAnimations":2},"timestamp":1769408726753,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8520,"activeAnimations":2},"timestamp":1769408727754,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":1},"timestamp":1769408728724,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8580,"activeAnimations":2},"timestamp":1769408728757,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":4},"timestamp":1769408728884,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":true},"timestamp":1769408728887,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":true},"timestamp":1769408728888,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:95","message":"Focus trap DOM query","data":{"focusableCount":7},"timestamp":1769408728889,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":8,"scrollY":1074.5,"timestamp":1769408728893},"timestamp":1769408728893,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8640,"activeAnimations":2},"timestamp":1769408729766,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:49","message":"Escape key handler fired","data":{"key":"Tab","mobileMenuOpen":true},"timestamp":1769408729968,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8700,"activeAnimations":2},"timestamp":1769408730766,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:49","message":"Escape key handler fired","data":{"key":"Enter","mobileMenuOpen":true},"timestamp":1769408731305,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":5},"timestamp":1769408731308,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:60","message":"Escape listener cleanup","data":{},"timestamp":1769408731311,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:132","message":"Focus trap listener cleanup","data":{},"timestamp":1769408731312,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408731312,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408731313,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":6},"timestamp":1769408731324,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":9,"scrollY":0,"timestamp":1769408731363},"timestamp":1769408731363,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8760,"activeAnimations":64},"timestamp":1769408731807,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8820,"activeAnimations":64},"timestamp":1769408732806,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":10,"scrollY":14340,"timestamp":1769408733239},"timestamp":1769408733240,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8880,"activeAnimations":64},"timestamp":1769408733808,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":8940,"activeAnimations":23},"timestamp":1769408734808,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":7},"timestamp":1769408734979,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":11,"scrollY":0,"timestamp":1769408735011},"timestamp":1769408735011,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9000,"activeAnimations":7},"timestamp":1769408735814,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9060,"activeAnimations":7},"timestamp":1769408736813,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":12,"scrollY":12428.5,"timestamp":1769408737230},"timestamp":1769408737230,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9120,"activeAnimations":7},"timestamp":1769408737813,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9180,"activeAnimations":7},"timestamp":1769408738818,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":13,"scrollY":12428,"timestamp":1769408739793},"timestamp":1769408739793,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9240,"activeAnimations":7},"timestamp":1769408739826,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":14,"scrollY":10359,"timestamp":1769408740798},"timestamp":1769408740798,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9300,"activeAnimations":7},"timestamp":1769408740831,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9360,"activeAnimations":7},"timestamp":1769408741831,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9420,"activeAnimations":7},"timestamp":1769408742842,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9480,"activeAnimations":7},"timestamp":1769408743853,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9540,"activeAnimations":7},"timestamp":1769408744872,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9600,"activeAnimations":7},"timestamp":1769408745883,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9660,"activeAnimations":7},"timestamp":1769408746898,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9720,"activeAnimations":7},"timestamp":1769408747926,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9780,"activeAnimations":7},"timestamp":1769408748944,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9840,"activeAnimations":7},"timestamp":1769408749944,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9900,"activeAnimations":7},"timestamp":1769408750945,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":9960,"activeAnimations":7},"timestamp":1769408751948,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10020,"activeAnimations":7},"timestamp":1769408752952,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:24","message":"Touch event","data":{"touchCount":2},"timestamp":1769408753913,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10080,"activeAnimations":7},"timestamp":1769408753957,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":8},"timestamp":1769408754053,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":true},"timestamp":1769408754055,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":true},"timestamp":1769408754056,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:95","message":"Focus trap DOM query","data":{"focusableCount":7},"timestamp":1769408754057,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:49","message":"Escape key handler fired","data":{"key":"Tab","mobileMenuOpen":true},"timestamp":1769408754820,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10140,"activeAnimations":11},"timestamp":1769408754975,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10200,"activeAnimations":7},"timestamp":1769408755975,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"Navigation.tsx:49","message":"Escape key handler fired","data":{"key":"Enter","mobileMenuOpen":true},"timestamp":1769408756820,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":9},"timestamp":1769408756822,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"Navigation.tsx:60","message":"Escape listener cleanup","data":{},"timestamp":1769408756824,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:132","message":"Focus trap listener cleanup","data":{},"timestamp":1769408756825,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:44","message":"Escape listener effect run","data":{"mobileMenuOpen":false},"timestamp":1769408756826,"sessionId":"debug-session","hypothesisId":"H2"}
+{"location":"Navigation.tsx:76","message":"Focus trap effect run","data":{"mobileMenuOpen":false},"timestamp":1769408756827,"sessionId":"debug-session","hypothesisId":"H4"}
+{"location":"Navigation.tsx:33","message":"Navigation render","data":{"renderCount":10},"timestamp":1769408756837,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:13","message":"Scroll event fired","data":{"scrollCount":15,"scrollY":0,"timestamp":1769408756869},"timestamp":1769408756869,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10260,"activeAnimations":65},"timestamp":1769408756990,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10320,"activeAnimations":64},"timestamp":1769408757991,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10380,"activeAnimations":64},"timestamp":1769408758991,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10440,"activeAnimations":23},"timestamp":1769408759991,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10500,"activeAnimations":23},"timestamp":1769408760993,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10560,"activeAnimations":23},"timestamp":1769408762000,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10620,"activeAnimations":23},"timestamp":1769408788786,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10680,"activeAnimations":23},"timestamp":1769408789792,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10740,"activeAnimations":23},"timestamp":1769408790814,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10800,"activeAnimations":23},"timestamp":1769408791842,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10860,"activeAnimations":23},"timestamp":1769408792855,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10920,"activeAnimations":23},"timestamp":1769408793868,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":10980,"activeAnimations":23},"timestamp":1769408794879,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11040,"activeAnimations":23},"timestamp":1769408795893,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11100,"activeAnimations":23},"timestamp":1769408796909,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11160,"activeAnimations":23},"timestamp":1769408797921,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11220,"activeAnimations":23},"timestamp":1769408798934,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11280,"activeAnimations":23},"timestamp":1769408799943,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11340,"activeAnimations":23},"timestamp":1769408800940,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11400,"activeAnimations":23},"timestamp":1769408801952,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11460,"activeAnimations":23},"timestamp":1769408802963,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11520,"activeAnimations":23},"timestamp":1769408803976,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11580,"activeAnimations":23},"timestamp":1769408804988,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11640,"activeAnimations":23},"timestamp":1769408806000,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11700,"activeAnimations":23},"timestamp":1769408807012,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11760,"activeAnimations":23},"timestamp":1769408808024,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11820,"activeAnimations":23},"timestamp":1769408809037,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11880,"activeAnimations":23},"timestamp":1769408810012,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":11940,"activeAnimations":23},"timestamp":1769408811023,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12000,"activeAnimations":23},"timestamp":1769408812016,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12060,"activeAnimations":23},"timestamp":1769408813010,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12120,"activeAnimations":23},"timestamp":1769408814021,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12180,"activeAnimations":23},"timestamp":1769408815031,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12240,"activeAnimations":23},"timestamp":1769408816041,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12300,"activeAnimations":23},"timestamp":1769408817051,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12360,"activeAnimations":23},"timestamp":1769408818061,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12420,"activeAnimations":23},"timestamp":1769408819071,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12480,"activeAnimations":23},"timestamp":1769408820079,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12540,"activeAnimations":23},"timestamp":1769408821088,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12600,"activeAnimations":23},"timestamp":1769408822099,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12660,"activeAnimations":23},"timestamp":1769408823109,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12720,"activeAnimations":23},"timestamp":1769408824120,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12780,"activeAnimations":23},"timestamp":1769408825130,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12840,"activeAnimations":23},"timestamp":1769408826141,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12900,"activeAnimations":23},"timestamp":1769408827151,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":12960,"activeAnimations":23},"timestamp":1769408828160,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13020,"activeAnimations":23},"timestamp":1769408829170,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13080,"activeAnimations":23},"timestamp":1769408830180,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13140,"activeAnimations":23},"timestamp":1769408831192,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13200,"activeAnimations":23},"timestamp":1769408832201,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13260,"activeAnimations":23},"timestamp":1769408833211,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13320,"activeAnimations":23},"timestamp":1769408834222,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13380,"activeAnimations":23},"timestamp":1769408835233,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13440,"activeAnimations":23},"timestamp":1769408836244,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13500,"activeAnimations":23},"timestamp":1769408837256,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13560,"activeAnimations":23},"timestamp":1769408838267,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13620,"activeAnimations":23},"timestamp":1769408839279,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13680,"activeAnimations":23},"timestamp":1769408840290,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13740,"activeAnimations":23},"timestamp":1769408841301,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13800,"activeAnimations":23},"timestamp":1769408842312,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13860,"activeAnimations":23},"timestamp":1769408843323,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13920,"activeAnimations":23},"timestamp":1769408844334,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":13980,"activeAnimations":23},"timestamp":1769408845345,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14040,"activeAnimations":23},"timestamp":1769408846339,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14100,"activeAnimations":23},"timestamp":1769408847351,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14160,"activeAnimations":23},"timestamp":1769408848361,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14220,"activeAnimations":23},"timestamp":1769408849372,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14280,"activeAnimations":23},"timestamp":1769408850383,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14340,"activeAnimations":23},"timestamp":1769408851393,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14400,"activeAnimations":23},"timestamp":1769408852404,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14460,"activeAnimations":23},"timestamp":1769408853415,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14520,"activeAnimations":23},"timestamp":1769408854425,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14580,"activeAnimations":23},"timestamp":1769408855435,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14640,"activeAnimations":23},"timestamp":1769408856446,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14700,"activeAnimations":23},"timestamp":1769408857456,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14760,"activeAnimations":23},"timestamp":1769408858466,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14820,"activeAnimations":23},"timestamp":1769408859477,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14880,"activeAnimations":23},"timestamp":1769408860488,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":14940,"activeAnimations":23},"timestamp":1769408861497,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15000,"activeAnimations":23},"timestamp":1769408862508,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15060,"activeAnimations":23},"timestamp":1769408863520,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15120,"activeAnimations":23},"timestamp":1769408864529,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15180,"activeAnimations":23},"timestamp":1769408865539,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15240,"activeAnimations":23},"timestamp":1769408866550,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15300,"activeAnimations":23},"timestamp":1769408867560,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15360,"activeAnimations":23},"timestamp":1769408868571,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15420,"activeAnimations":23},"timestamp":1769408869581,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15480,"activeAnimations":23},"timestamp":1769408870591,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15540,"activeAnimations":23},"timestamp":1769408871601,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15600,"activeAnimations":23},"timestamp":1769408872612,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15660,"activeAnimations":23},"timestamp":1769408873622,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15720,"activeAnimations":23},"timestamp":1769408874633,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15780,"activeAnimations":23},"timestamp":1769408875642,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15840,"activeAnimations":23},"timestamp":1769408876653,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15900,"activeAnimations":23},"timestamp":1769408877663,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":15960,"activeAnimations":23},"timestamp":1769408878673,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16020,"activeAnimations":23},"timestamp":1769408879683,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16080,"activeAnimations":23},"timestamp":1769408880686,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16140,"activeAnimations":23},"timestamp":1769408881696,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16200,"activeAnimations":23},"timestamp":1769408882707,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16260,"activeAnimations":23},"timestamp":1769408883716,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16320,"activeAnimations":23},"timestamp":1769408884728,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16380,"activeAnimations":23},"timestamp":1769408885736,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16440,"activeAnimations":23},"timestamp":1769408886747,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16500,"activeAnimations":23},"timestamp":1769408887757,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16560,"activeAnimations":23},"timestamp":1769408888767,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16620,"activeAnimations":23},"timestamp":1769408889778,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16680,"activeAnimations":23},"timestamp":1769408890788,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16740,"activeAnimations":23},"timestamp":1769408891798,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16800,"activeAnimations":23},"timestamp":1769408892807,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16860,"activeAnimations":23},"timestamp":1769408893818,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16920,"activeAnimations":23},"timestamp":1769408894829,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":16980,"activeAnimations":23},"timestamp":1769408895838,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17040,"activeAnimations":23},"timestamp":1769408896848,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17100,"activeAnimations":23},"timestamp":1769408897858,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17160,"activeAnimations":23},"timestamp":1769408898868,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17220,"activeAnimations":23},"timestamp":1769408899878,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17280,"activeAnimations":23},"timestamp":1769408900888,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17340,"activeAnimations":23},"timestamp":1769408901899,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17400,"activeAnimations":23},"timestamp":1769408902908,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17460,"activeAnimations":23},"timestamp":1769408903919,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17520,"activeAnimations":23},"timestamp":1769408904929,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17580,"activeAnimations":23},"timestamp":1769408905939,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17640,"activeAnimations":23},"timestamp":1769408906949,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17700,"activeAnimations":23},"timestamp":1769408907960,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17760,"activeAnimations":23},"timestamp":1769408908969,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17820,"activeAnimations":23},"timestamp":1769408909979,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17880,"activeAnimations":23},"timestamp":1769408910989,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":17940,"activeAnimations":23},"timestamp":1769408911999,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18000,"activeAnimations":23},"timestamp":1769408913010,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18060,"activeAnimations":23},"timestamp":1769408914019,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18120,"activeAnimations":23},"timestamp":1769408915030,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18180,"activeAnimations":23},"timestamp":1769408916040,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18240,"activeAnimations":23},"timestamp":1769408917050,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18300,"activeAnimations":23},"timestamp":1769408918060,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18360,"activeAnimations":23},"timestamp":1769408919070,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18420,"activeAnimations":23},"timestamp":1769408920080,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18480,"activeAnimations":23},"timestamp":1769408921091,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18540,"activeAnimations":23},"timestamp":1769408922100,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18600,"activeAnimations":23},"timestamp":1769408923110,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18660,"activeAnimations":23},"timestamp":1769408924120,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18720,"activeAnimations":23},"timestamp":1769408925131,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18780,"activeAnimations":23},"timestamp":1769408926141,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18840,"activeAnimations":23},"timestamp":1769408927151,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18900,"activeAnimations":23},"timestamp":1769408928161,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":18960,"activeAnimations":23},"timestamp":1769408929171,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19020,"activeAnimations":23},"timestamp":1769408930181,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19080,"activeAnimations":23},"timestamp":1769408931191,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19140,"activeAnimations":23},"timestamp":1769408932201,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19200,"activeAnimations":23},"timestamp":1769408933211,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19260,"activeAnimations":23},"timestamp":1769408934221,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19320,"activeAnimations":23},"timestamp":1769408935231,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19380,"activeAnimations":23},"timestamp":1769408936242,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19440,"activeAnimations":23},"timestamp":1769408937251,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19500,"activeAnimations":23},"timestamp":1769408938262,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19560,"activeAnimations":23},"timestamp":1769408939271,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19620,"activeAnimations":23},"timestamp":1769408940276,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19680,"activeAnimations":23},"timestamp":1769408941288,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19740,"activeAnimations":23},"timestamp":1769408942297,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19800,"activeAnimations":23},"timestamp":1769408943307,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19860,"activeAnimations":23},"timestamp":1769408944317,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19920,"activeAnimations":23},"timestamp":1769408945326,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":19980,"activeAnimations":23},"timestamp":1769408946337,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20040,"activeAnimations":23},"timestamp":1769408947347,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20100,"activeAnimations":23},"timestamp":1769408948356,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20160,"activeAnimations":23},"timestamp":1769408949367,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20220,"activeAnimations":23},"timestamp":1769408950377,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20280,"activeAnimations":23},"timestamp":1769408951388,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20340,"activeAnimations":23},"timestamp":1769408952397,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20400,"activeAnimations":23},"timestamp":1769408953406,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20460,"activeAnimations":23},"timestamp":1769408954417,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20520,"activeAnimations":23},"timestamp":1769408955427,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20580,"activeAnimations":23},"timestamp":1769408956437,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20640,"activeAnimations":23},"timestamp":1769408957447,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20700,"activeAnimations":23},"timestamp":1769408958457,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20760,"activeAnimations":23},"timestamp":1769408959467,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20820,"activeAnimations":23},"timestamp":1769408960478,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20880,"activeAnimations":23},"timestamp":1769408961496,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":20940,"activeAnimations":23},"timestamp":1769408962494,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21000,"activeAnimations":23},"timestamp":1769408963482,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21060,"activeAnimations":23},"timestamp":1769408964460,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21120,"activeAnimations":23},"timestamp":1769408983785,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21180,"activeAnimations":23},"timestamp":1769408984785,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21240,"activeAnimations":23},"timestamp":1769408985790,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21300,"activeAnimations":23},"timestamp":1769408986790,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21360,"activeAnimations":23},"timestamp":1769408987792,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21420,"activeAnimations":23},"timestamp":1769408988792,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21480,"activeAnimations":23},"timestamp":1769408989790,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21540,"activeAnimations":23},"timestamp":1769408990791,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21600,"activeAnimations":23},"timestamp":1769408991803,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21660,"activeAnimations":23},"timestamp":1769408992803,"sessionId":"debug-session","hypothesisId":"H3"}
+{"location":"debug-scroll.ts:34","message":"Animation check","data":{"frameCount":21720,"activeAnimations":23},"timestamp":1769408993804,"sessionId":"debug-session","hypothesisId":"H3"}

@@ -113,7 +113,15 @@ body {
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(135deg, #00D9FF 0%, #B794F6 50%, #FF00FF 100%);
     background-size: 200% 200%;
-    animation: gradientShift 6s ease infinite;
+    /* Removed infinite animation for mobile performance */
+    /* Only animate on desktop with hover capability */
+  }
+  
+  /* Enable gradient animation only on desktop devices */
+  @media (hover: hover) and (min-width: 768px) {
+    .text-neon {
+      animation: gradientShift 6s ease infinite;
+    }
   }
   
   /* Glass morphism - clean version */
@@ -394,12 +402,25 @@ body {
 /* Apply animations with GPU acceleration */
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
-  will-change: transform, opacity;
+  /* will-change removed - only apply on desktop for performance */
+}
+
+/* Only use will-change on desktop devices with hover capability */
+@media (hover: hover) and (min-width: 768px) {
+  .animate-fade-in-up {
+    will-change: transform, opacity;
+  }
 }
 
 .animate-scale-in {
   animation: scaleIn 0.8s ease-out forwards;
-  will-change: transform, opacity;
+  /* will-change removed - only apply on desktop for performance */
+}
+
+@media (hover: hover) and (min-width: 768px) {
+  .animate-scale-in {
+    will-change: transform, opacity;
+  }
 }
 
 /* 
@@ -408,7 +429,14 @@ body {
  */
 .skill-rating-fill {
   /* GPU-accelerated width transition */
-  will-change: width;
+  /* will-change removed for mobile performance */
+}
+
+/* Only use will-change on desktop devices */
+@media (hover: hover) and (min-width: 768px) {
+  .skill-rating-fill {
+    will-change: width;
+  }
 }
 
 .skill-rating-shine {
@@ -422,5 +450,41 @@ body {
   }
   100% {
     transform: translateX(200%);
+  }
+}
+
+/*
+ * Accessibility & Performance: Reduced Motion Support
+ * 
+ * Respects user preference for reduced motion
+ * Also improves mobile performance by disabling heavy animations
+ * WCAG 2.1 Level AA - 2.3.3 Animation from Interactions
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  /* Disable infinite animations entirely */
+  .text-neon {
+    animation: none !important;
+    background-position: 0% 50%;
+  }
+  
+  .animate-fade-in-up,
+  .animate-scale-in,
+  .animate-float,
+  .animate-rotate-slow,
+  .animate-shimmer,
+  .animate-scanline,
+  .animate-gradient-shift {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

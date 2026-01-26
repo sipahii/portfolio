@@ -5,6 +5,7 @@ import { WebVitalsReporter } from '@/components/WebVitalsReporter'
 import { Navigation } from '@/components/Navigation'
 import { SkipToContent } from '@/components/SkipToContent'
 import { FocusManager } from '@/components/FocusManager'
+import '@/lib/debug-scroll' // Debug instrumentation
 
 /**
  * Font Loading Strategy
@@ -109,6 +110,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  // #region agent log
+  if (typeof window !== 'undefined') {
+    const isMobile = window.innerWidth < 768;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const hasHover = window.matchMedia('(hover: hover)').matches;
+    fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'layout.tsx:112',message:'Layout client-side detection',data:{isMobile,prefersReducedMotion,hasHover,screenWidth:window.innerWidth},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H5'})}).catch(()=>{});
+  }
+  // #endregion
+  
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="antialiased min-h-screen flex flex-col">

@@ -1,0 +1,81 @@
+<svg width="1000" height="900" viewBox="0 0 1000 900" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: Inter, Arial, sans-serif; fill: #e5e7eb; font-size: 14px; }
+    .title { font-size: 28px; font-weight: 600; }
+    .subtitle { font-size: 16px; fill: #9ca3af; }
+    .box { fill: #0b1220; stroke: #22d3ee; stroke-width: 1.2; rx: 12; }
+    .box-soft { fill: #0b1220; stroke: #a78bfa; stroke-width: 1.2; rx: 12; }
+    .box-warm { fill: #0b1220; stroke: #facc15; stroke-width: 1.2; rx: 12; }
+    .arrow { stroke: #6ee7b7; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+    .small { font-size: 13px; fill: #cbd5f5; }
+  </style>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6" fill="#6ee7b7"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#020617"/>
+
+  <!-- Title -->
+  <text x="500" y="50" text-anchor="middle" class="title">Infinite Scroll Feed Architecture</text>
+  <text x="500" y="78" text-anchor="middle" class="subtitle">
+    High-performance social feed (60fps · 10k+ posts · Low memory)
+  </text>
+
+  <!-- Client -->
+  <rect x="200" y="120" width="600" height="230" class="box"/>
+  <text x="500" y="145" text-anchor="middle">Client (Browser)</text>
+
+  <!-- Client inner -->
+  <rect x="240" y="170" width="220" height="60" class="box"/>
+  <text x="350" y="205" text-anchor="middle" class="small">Virtual Scroll Container</text>
+
+  <rect x="540" y="170" width="220" height="60" class="box"/>
+  <text x="650" y="205" text-anchor="middle" class="small">Viewport Window</text>
+
+  <rect x="240" y="250" width="220" height="60" class="box"/>
+  <text x="350" y="285" text-anchor="middle" class="small">Intersection Observer</text>
+
+  <rect x="540" y="250" width="220" height="60" class="box"/>
+  <text x="650" y="285" text-anchor="middle" class="small">Suspense Boundaries</text>
+
+  <!-- Arrows inside client -->
+  <line x1="350" y1="230" x2="350" y2="250" class="arrow"/>
+  <line x1="650" y1="230" x2="650" y2="250" class="arrow"/>
+
+  <!-- RSC -->
+  <rect x="300" y="370" width="400" height="60" class="box"/>
+  <text x="500" y="405" text-anchor="middle">React Server Components (RSC)</text>
+
+  <line x1="500" y1="350" x2="500" y2="370" class="arrow"/>
+
+  <!-- API Layer -->
+  <rect x="220" y="460" width="560" height="180" class="box-soft"/>
+  <text x="500" y="485" text-anchor="middle">API Layer (Edge)</text>
+
+  <rect x="250" y="510" width="140" height="60" class="box-soft"/>
+  <text x="320" y="545" text-anchor="middle" class="small">GraphQL (Batch)</text>
+
+  <rect x="430" y="510" width="160" height="60" class="box-soft"/>
+  <text x="510" y="545" text-anchor="middle" class="small">REST (Cursor)</text>
+
+  <rect x="620" y="510" width="140" height="60" class="box-soft"/>
+  <text x="690" y="545" text-anchor="middle" class="small">WebSocket</text>
+
+  <line x1="500" y1="430" x2="500" y2="460" class="arrow"/>
+
+  <!-- Data Layer -->
+  <rect x="300" y="690" width="400" height="120" class="box-warm"/>
+  <text x="500" y="715" text-anchor="middle">Data Layer</text>
+  <text x="500" y="750" text-anchor="middle" class="small">Posts · Users · Media · External APIs</text>
+
+  <line x1="500" y1="640" x2="500" y2="690" class="arrow"/>
+
+  <!-- Footer -->
+  <text x="500" y="860" text-anchor="middle" class="small">
+    LCP &lt; 2.5s · Memory &lt; 200MB · 60fps scroll
+  </text>
+</svg>

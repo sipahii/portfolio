@@ -103,7 +103,7 @@ export default function FrontendSystemDesignPage() {
                   </div>
                 </section>
 
-                {/* Architecture Overview - Removed diagrams for performance */}
+                {/* Architecture Overview */}
                 {design.architecture && (
                   <section className="mb-6" aria-labelledby={`architecture-${index}`}>
                     <h3 id={`architecture-${index}`} className="text-xl font-semibold text-white mb-3">
@@ -117,6 +117,23 @@ export default function FrontendSystemDesignPage() {
                         </li>
                       ))}
                     </ul>
+                  </section>
+                )}
+
+                {/* Architecture Diagram */}
+                {design.diagram && (
+                  <section className="mb-8" aria-labelledby={`diagram-${index}`}>
+                    <h3 id={`diagram-${index}`} className="text-xl font-semibold text-white mb-4">
+                      Architecture Diagram
+                    </h3>
+                    <div className="bg-[#020617] rounded-lg p-4 overflow-x-auto">
+                      <img 
+                        src={design.diagram} 
+                        alt={`${design.title} architecture diagram showing the flow from client to server components`}
+                        className="w-full max-w-4xl mx-auto"
+                        loading="lazy"
+                      />
+                    </div>
                   </section>
                 )}
 
@@ -224,6 +241,7 @@ const systemDesigns = [
     title: 'Infinite Scroll Feed (Social Media)',
     description: 'Design a performant infinite scroll feed similar to Twitter/Instagram that handles thousands of posts while maintaining 60fps scroll performance.',
     problem: 'Need to display unlimited content without degrading performance. Must handle images, videos, and dynamic content while keeping memory usage low and scroll smooth.',
+    diagram: '/svg/infinite-scroll-architecture.svg',
     requirements: {
       functional: [
         'Load more content as user scrolls',
@@ -288,6 +306,7 @@ const systemDesigns = [
     title: 'Real-Time Search with Autocomplete',
     description: 'Design a performant search system with instant autocomplete, similar to Google Search, handling millions of queries per day.',
     problem: 'Provide instant search results as user types without overwhelming the server or degrading UX. Must handle typos, ranking, and highlighting.',
+    diagram: '/svg/search-architecture.svg',
     requirements: {
       functional: [
         'Show suggestions as user types',
@@ -352,6 +371,7 @@ const systemDesigns = [
     title: 'Real-Time Analytics Dashboard',
     description: 'Design a dashboard displaying real-time metrics with charts, similar to Datadog or Grafana, updating every second without performance degradation.',
     problem: 'Display continuously updating time-series data with multiple charts. Must handle high-frequency updates while maintaining 60fps and allowing user interactions.',
+    diagram: '/svg/realtime-dashboard-architecture.svg',
     requirements: {
       functional: [
         'Display multiple charts (line, bar, pie)',
