@@ -30,12 +30,6 @@ const navigation = [
 ]
 
 export function Navigation() {
-  // #region agent log
-  const renderCount = useRef(0);
-  renderCount.current++;
-  fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:33',message:'Navigation render',data:{renderCount:renderCount.current},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H1'})}).catch(()=>{});
-  // #endregion
-  
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const mobileMenuRef = useRef<HTMLDivElement>(null)
@@ -45,14 +39,7 @@ export function Navigation() {
    * WCAG 2.1.1 Keyboard (Level A)
    */
   useEffect(() => {
-    // #region agent log
-    fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:44',message:'Escape listener effect run',data:{mobileMenuOpen},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H2'})}).catch(()=>{});
-    // #endregion
-    
     const handleEscape = (e: KeyboardEvent) => {
-      // #region agent log
-      fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:49',message:'Escape key handler fired',data:{key:e.key,mobileMenuOpen},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H2'})}).catch(()=>{});
-      // #endregion
       if (e.key === 'Escape' && mobileMenuOpen) {
         setMobileMenuOpen(false)
       }
@@ -60,12 +47,7 @@ export function Navigation() {
     
     if (mobileMenuOpen) {
       document.addEventListener('keydown', handleEscape)
-      return () => {
-        // #region agent log
-        fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:60',message:'Escape listener cleanup',data:{},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H2'})}).catch(()=>{});
-        // #endregion
-        document.removeEventListener('keydown', handleEscape)
-      }
+      return () => document.removeEventListener('keydown', handleEscape)
     }
   }, [mobileMenuOpen])
   
@@ -81,10 +63,6 @@ export function Navigation() {
   const menuButtonRef = useRef<HTMLButtonElement>(null)
   
   useEffect(() => {
-    // #region agent log
-    fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:76',message:'Focus trap effect run',data:{mobileMenuOpen},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H1'})}).catch(()=>{});
-    // #endregion
-    
     // Early return if menu is closed - prevents unnecessary DOM queries
     if (!mobileMenuOpen) {
       // Restore focus to toggle button when menu closes
@@ -100,10 +78,6 @@ export function Navigation() {
         'a[href], button:not([disabled])'
       )
       
-      // #region agent log
-      fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:95',message:'Focus trap DOM query',data:{focusableCount:focusableElements.length},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H1'})}).catch(()=>{});
-      // #endregion
-      
       // Early return if no focusable elements
       if (focusableElements.length === 0) return
       
@@ -115,41 +89,25 @@ export function Navigation() {
       
       // Focus trap: cycle focus within menu
       const handleTabKey = (e: KeyboardEvent) => {
-        // #region agent log - Track ALL keyboard events in focus trap
-        const activeEl = document.activeElement as HTMLElement;
-        fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:119',message:'Focus trap keyboard event',data:{key:e.key,shiftKey:e.shiftKey,activeElement:activeEl?.tagName,activeHref:(activeEl as HTMLAnchorElement)?.href,isFirstElement:document.activeElement===firstElement,isLastElement:document.activeElement===lastElement},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H1,H2'})}).catch(()=>{});
-        // #endregion
-        
         if (e.key !== 'Tab') return
         
         if (e.shiftKey) {
           // Shift + Tab: if on first element, wrap to last
           if (document.activeElement === firstElement) {
             e.preventDefault()
-            // #region agent log
-            fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:131',message:'Focus trap: preventDefault on Shift+Tab',data:{},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H2'})}).catch(()=>{});
-            // #endregion
             lastElement?.focus()
           }
         } else {
           // Tab: if on last element, wrap to first
           if (document.activeElement === lastElement) {
             e.preventDefault()
-            // #region agent log
-            fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:141',message:'Focus trap: preventDefault on Tab',data:{},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H2'})}).catch(()=>{});
-            // #endregion
             firstElement?.focus()
           }
         }
       }
       
       document.addEventListener('keydown', handleTabKey)
-      return () => {
-        // #region agent log
-        fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:132',message:'Focus trap listener cleanup',data:{},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H4'})}).catch(()=>{});
-        // #endregion
-        document.removeEventListener('keydown', handleTabKey)
-      }
+      return () => document.removeEventListener('keydown', handleTabKey)
     }
   }, [mobileMenuOpen])
 
@@ -247,24 +205,7 @@ export function Navigation() {
                       ? 'bg-neon-purple/10 text-neon-purple border border-neon-purple/50'
                       : 'text-gray-400 bg-dark-700/50 hover:bg-neon-cyan/10 hover:text-neon-cyan hover:border hover:border-neon-cyan/30'
                   }`}
-                  onClick={() => {
-                    // #region agent log
-                    fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:209',message:'Mobile link clicked',data:{href:item.href,name:item.name,mobileMenuOpen},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H3'})}).catch(()=>{});
-                    // #endregion
-                    setMobileMenuOpen(false)
-                  }}
-                  onKeyDown={(e) => {
-                    // #region agent log - Track Enter key on links
-                    const activeEl = document.activeElement as HTMLElement;
-                    fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:217',message:'Mobile link keydown',data:{key:e.key,href:item.href,name:item.name,activeElement:activeEl?.tagName,mobileMenuOpen},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H2,H4'})}).catch(()=>{});
-                    // #endregion
-                    if (e.key === 'Enter') {
-                      // #region agent log
-                      fetch('http://127.0.0.1:7243/ingest/ff32af97-a210-4d19-a1c3-d1f3a6bbf43e',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Navigation.tsx:222',message:'Enter key on mobile link - CRITICAL',data:{href:item.href,name:item.name,willCloseMenu:true},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H2,H3'})}).catch(()=>{});
-                      // #endregion
-                      setMobileMenuOpen(false)
-                    }
-                  }}
+                  onClick={() => setMobileMenuOpen(false)}
                   aria-current={isActive ? 'page' : undefined}
                 >
                   {item.name}
